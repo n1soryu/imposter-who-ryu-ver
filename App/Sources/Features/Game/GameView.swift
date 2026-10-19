@@ -48,11 +48,23 @@ struct GameView: View {
                 withAnimation(.snappy) { store.perform { $0.cardSeen() } }
             }
             .id(player.id)
+        case .clues(let lap, let turn):
+            CluesView(round: session.round, lap: lap, turn: turn) {
+                withAnimation(.snappy) { store.perform { $0.clueGiven() } }
+            } skipToDiscussion: {
+                withAnimation(.snappy) { store.perform { $0.endClues() } }
+            }
+        case .discussion:
+            DiscussionView(seconds: session.rules.settings.discussionSeconds) {
+                withAnimation(.snappy) { store.perform { $0.startVoting() } }
+            } quickVote: {
+                withAnimation(.snappy) { store.perform { $0.startVoting() } }
+            }
         default:
             ContentUnavailableView(
-                "Clues are next",
-                systemImage: "bubble.left.and.bubble.right",
-                description: Text("Everyone has their card. Clue turns, voting and results arrive in the next builds.")
+                "Voting is next",
+                systemImage: "hand.raised",
+                description: Text("Voting and results arrive in the next builds.")
             )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.felt)
