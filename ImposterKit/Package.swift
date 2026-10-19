@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "ImposterKit", targets: ["ImposterKit"]),
     ],
     targets: [
-        .target(name: "ImposterKit"),
+        .target(name: "ImposterKit", resources: [.copy("Resources/Categories")]),
         .testTarget(name: "ImposterKitTests", dependencies: ["ImposterKit"]),
     ]
 )

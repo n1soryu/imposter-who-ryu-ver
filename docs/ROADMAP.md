@@ -12,7 +12,7 @@ Status key: ✅ done · 🚧 in progress · ⬜ not started
 |---|---|---|
 | 0.1 | Repository, roadmap, conventions | ✅ |
 | 0.2 | `ImposterKit` Swift package: the game engine (roles, modes, rounds, voting, scoring) | ✅ |
-| 0.3 | Word content: categories with hints and decoy words, plus no-repeat word picking | ⬜ |
+| 0.3 | Word content: categories with hints and decoy words, plus no-repeat word picking | ✅ |
 
 ## Phase 1 — Pass-and-play iOS app
 
