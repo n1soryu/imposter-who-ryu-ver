@@ -14,13 +14,22 @@ the imposter, who has to bluff their way through the clues.
 
 ## Running it
 
-1. Open `Imposter.xcodeproj` in Xcode.
-2. Copy `Config/Signing.local.xcconfig.example` to `Config/Signing.local.xcconfig` and set
-   your Personal Team ID. A free Apple ID works.
-3. Pick your iPhone or a simulator and press Run.
+- **On your iPhone:** follow [docs/INSTALL.md](docs/INSTALL.md). In short: add your Apple ID to
+  Xcode, then run `scripts/setup-signing.sh` once and `scripts/install-on-iphone.sh` each week.
+- **In the simulator:** open `Imposter.xcodeproj`, pick a simulator and press Run.
 
-To build from the terminal, run `scripts/build.sh`. It regenerates the project first. After changing `project.yml` or adding files, run `xcodegen generate`
-(`brew install xcodegen`).
+To build from the terminal, run `scripts/build.sh`. It regenerates the project from
+`project.yml` first (`brew install xcodegen`).
+
+## Tools
+
+| Script | What it does |
+|---|---|
+| `scripts/test.sh` | Runs the ImposterKit tests. |
+| `scripts/build.sh` | Regenerates the project and builds the app. |
+| `scripts/screenshots.sh <udid>` | Screenshots every screen on a simulator using debug scenes. |
+| `scripts/render-icon.swift` | Redraws the app icon. |
+| `scripts/render-sounds.swift` | Re-synthesizes the sound effects. |
 
 ## Tests
 
