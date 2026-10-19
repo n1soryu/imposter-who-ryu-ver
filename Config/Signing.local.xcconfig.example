@@ -1,0 +1,8 @@
+// Copy this file to Signing.local.xcconfig (git ignores it) and fill in your team.
+//
+// Find your team ID in Xcode: Settings > Accounts > your Apple ID > Personal Team.
+// It's the 10-character code shown in brackets.
+DEVELOPMENT_TEAM = ABCDE12345
+
+// Uncomment if Xcode says the bundle ID is already in use:
+// IMPOSTER_BUNDLE_ID = com.yourname.imposter

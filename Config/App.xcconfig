@@ -1,0 +1,9 @@
+// Shared build settings for the Imposter app.
+
+// Free Apple ID teams need a bundle ID that no one else has registered.
+// Override it in Signing.local.xcconfig if this one is taken.
+IMPOSTER_BUNDLE_ID = com.n1soryu.imposter
+
+// Personal signing settings (your DEVELOPMENT_TEAM) live in an untracked file.
+// Copy Signing.local.xcconfig.example to Signing.local.xcconfig and fill it in.
+#include? "Signing.local.xcconfig"

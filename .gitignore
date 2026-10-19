@@ -29,3 +29,6 @@ fastlane/test_output
 
 # Local tooling
 .atlas/
+
+# Personal signing
+Config/Signing.local.xcconfig
