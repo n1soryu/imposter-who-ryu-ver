@@ -25,14 +25,35 @@ struct GameView: View {
                 Button("End game") { isConfirmingEnd = true }
             }
         }
+        .sheet(isPresented: $isShowingScoreboard) {
+            if let session = store.session {
+                ScoreboardView(session: session)
+            }
+        }
+        .alert("Couldn't deal the next round", isPresented: hasProblem) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(store.problem ?? "")
+        }
         .confirmationDialog("End this game?", isPresented: $isConfirmingEnd, titleVisibility: .visible) {
             Button("End game", role: .destructive) {
                 store.end()
                 leave()
             }
         } message: {
-            Text("Scores from this game won't be kept.")
+            Text(endMessage)
         }
+    }
+
+    private var endMessage: String {
+        guard let session = store.session, session.scoreboard.roundsPlayed > 0,
+              let leader = session.scoreboard.standings(for: session.players).first
+        else { return "No rounds have been finished yet." }
+        return "\(leader.player.name) is leading with \(leader.points) points. Scores aren't kept after the game ends."
+    }
+
+    private var hasProblem: Binding<Bool> {
+        Binding { store.problem != nil && store.session != nil } set: { _ in store.clearProblem() }
     }
 
     @ViewBuilder

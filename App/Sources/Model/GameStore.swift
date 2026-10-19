@@ -54,6 +54,10 @@ final class GameStore {
         session = nil
     }
 
+    func clearProblem() {
+        problem = nil
+    }
+
     private func savedPicker() -> WordPicker {
         guard let data = defaults.data(forKey: Self.historyKey),
               let picker = try? JSONDecoder().decode(WordPicker.self, from: data)
