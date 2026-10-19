@@ -14,6 +14,7 @@
   <img alt="Swift 6" src="https://img.shields.io/badge/Swift-6-FF3D7F">
   <img alt="SwiftUI" src="https://img.shields.io/badge/UI-SwiftUI-FFD23F">
   <img alt="Version 0.1.0" src="https://img.shields.io/badge/version-0.1.0-8F8BB8">
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-F3F4FF"></a>
 </p>
 
 No ads, no accounts, no internet. One phone gets passed around the table. It's a personal
@@ -108,7 +109,8 @@ scripts/build.sh simulator
 Host mode: the iPhone runs the game and friends join from any phone's browser (iPhone or
 Android) by scanning a QR code over local Wi-Fi. See the [roadmap](docs/ROADMAP.md).
 
-## Credits
+## License and credits
 
-[Bricolage Grotesque](https://github.com/ateliertriay/bricolage) by the Bricolage Grotesque Project Authors, used under
-the [SIL Open Font License](App/Resources/Fonts/OFL.txt).
+The code is released under the [MIT License](LICENSE). The bundled font,
+[Bricolage Grotesque](https://github.com/ateliertriay/bricolage) by the Bricolage Grotesque
+Project Authors, keeps its own [SIL Open Font License](App/Resources/Fonts/OFL.txt).
