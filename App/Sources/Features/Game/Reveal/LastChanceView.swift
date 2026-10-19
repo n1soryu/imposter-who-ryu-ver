@@ -13,6 +13,8 @@ struct LastChanceView: View {
             VStack(alignment: .leading, spacing: 0) {
                 Text("Caught!")
                     .font(.display(64))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.5)
                     .foregroundStyle(Color.imposterInk)
                 Text("\(imposterName) was the imposter. They get one last chance: guess the word to steal the win.")
                     .font(.title3)

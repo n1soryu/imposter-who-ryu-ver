@@ -8,29 +8,31 @@ struct PassThePhoneView: View {
     var confirm: () -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text(progress)
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(Color.haze)
+        AdaptiveScrollView {
+            VStack(alignment: .leading, spacing: 0) {
+                Text(progress)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Color.haze)
 
-            Spacer()
+                Spacer()
 
-            Text("Pass the phone to")
-                .font(.title3)
-                .foregroundStyle(Color.haze)
-            Text(name)
-                .font(.display(64))
-                .foregroundStyle(Color.cardStock)
-                .lineLimit(2)
-                .minimumScaleFactor(0.5)
-            Text("Hold it so nobody else can see the screen.")
-                .foregroundStyle(Color.haze)
-                .padding(.top, 8)
+                Text("Pass the phone to")
+                    .font(.title3)
+                    .foregroundStyle(Color.haze)
+                Text(name)
+                    .font(.display(64))
+                    .foregroundStyle(Color.cardStock)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.5)
+                Text("Hold it so nobody else can see the screen.")
+                    .foregroundStyle(Color.haze)
+                    .padding(.top, 8)
 
-            Spacer()
+                Spacer()
 
-            Button("I'm \(name)", action: confirm)
-                .buttonStyle(.pill)
+                Button("I'm \(name)", action: confirm)
+                    .buttonStyle(.pill)
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }

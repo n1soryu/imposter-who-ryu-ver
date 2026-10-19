@@ -6,19 +6,21 @@ struct AllVotesInView: View {
     var reveal: () -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Spacer()
-            Text("All \(count) votes are in")
-                .font(.display(56))
-                .foregroundStyle(Color.cardStock)
-                .minimumScaleFactor(0.5)
-            Text("Put the phone where everyone can see it.")
-                .font(.title3)
-                .foregroundStyle(Color.haze)
-                .padding(.top, 8)
-            Spacer()
-            Button("Reveal the vote", action: reveal)
-                .buttonStyle(.pill)
+        AdaptiveScrollView {
+            VStack(alignment: .leading, spacing: 0) {
+                Spacer()
+                Text("All \(count) votes are in")
+                    .font(.display(56))
+                    .foregroundStyle(Color.cardStock)
+                    .minimumScaleFactor(0.5)
+                Text("Put the phone where everyone can see it.")
+                    .font(.title3)
+                    .foregroundStyle(Color.haze)
+                    .padding(.top, 8)
+                Spacer()
+                Button("Reveal the vote", action: reveal)
+                    .buttonStyle(.pill)
+            }
         }
     }
 }

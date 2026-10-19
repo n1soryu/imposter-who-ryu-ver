@@ -23,6 +23,9 @@ struct PillButtonStyle: ButtonStyle {
         var body: some View {
             configuration.label
                 .font(.displaySemiBold(20))
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
+                .multilineTextAlignment(.center)
                 .frame(maxWidth: .infinity, minHeight: 30)
                 .padding(.vertical, 16)
                 .padding(.horizontal, 24)

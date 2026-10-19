@@ -82,6 +82,7 @@
 		C941056F86B976B1F12A464B /* CardWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1737631D2761EFEE9DE72E /* CardWord.swift */; };
 		CD4A3080C70D0C5251A20040 /* WordEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EF8BCFC77244B27EFB085A /* WordEditorView.swift */; };
 		CDB91E9EB63123702C552411 /* BallotTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8255921096F92236239ABBC /* BallotTurn.swift */; };
+		CEAD8B435E290DC951F01BC9 /* AdaptiveScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17781689625469AAA0891DBE /* AdaptiveScrollView.swift */; };
 		D24CF1BF551A6814153FD415 /* PillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343163C16639E26888F904F /* PillButtonStyle.swift */; };
 		D41CF5078565F2E54FC69C38 /* CluesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEFD7BC405FD65E87A3F8E7 /* CluesView.swift */; };
 		DA5A2B90E02C950C7DD31A76 /* AddWordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C3D0353CD9AC39EEDD191 /* AddWordField.swift */; };
@@ -108,6 +109,7 @@
 		0B3A8772D0F48E709895BFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C43622BE7EB9B6F1381B1F5 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 		141A6ECD322E8089538AB7D0 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
+		17781689625469AAA0891DBE /* AdaptiveScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveScrollView.swift; sourceTree = "<group>"; };
 		194304FB5A786982E7C05EF2 /* ImposterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImposterApp.swift; sourceTree = "<group>"; };
 		1B6E1B2AA1EA3EB25ED315DB /* RosterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterStore.swift; sourceTree = "<group>"; };
 		1C26B39DCFCA0057CBC763B9 /* TrollFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrollFrequency.swift; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 		7BF0F29A994EF46F529116B7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				17781689625469AAA0891DBE /* AdaptiveScrollView.swift */,
 				8D1737631D2761EFEE9DE72E /* CardWord.swift */,
 				0C43622BE7EB9B6F1381B1F5 /* Countdown.swift */,
 				92F52E3AC31FBCED843FB90D /* CrewCard.swift */,
@@ -582,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAD8B435E290DC951F01BC9 /* AdaptiveScrollView.swift in Sources */,
 				5642FFB33207E5250A0C5FF4 /* AddPlayerField.swift in Sources */,
 				DA5A2B90E02C950C7DD31A76 /* AddWordField.swift in Sources */,
 				B21115149F0F12731986D801 /* AllVotesInView.swift in Sources */,
