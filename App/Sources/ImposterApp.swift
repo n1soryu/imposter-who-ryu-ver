@@ -8,6 +8,7 @@ struct ImposterApp: App {
     @State private var rosterStore: RosterStore
     @State private var rulesStore: RulesStore
     @State private var gameStore = GameStore()
+    @State private var soundPlayer = SoundPlayer()
 
     init() {
         let bundled = WordLibrary.bundledOrEmpty()
@@ -26,6 +27,7 @@ struct ImposterApp: App {
                 .environment(rosterStore)
                 .environment(rulesStore)
                 .environment(gameStore)
+                .environment(soundPlayer)
                 .preferredColorScheme(.dark)
                 .tint(Color.crewInk)
         }

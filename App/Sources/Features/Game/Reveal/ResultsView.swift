@@ -10,6 +10,7 @@ struct ResultsView: View {
 
     @State private var isRevealed = false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(SoundPlayer.self) private var sound
 
     var body: some View {
         let summary = ResultSummary(round: session.round, result: result)
@@ -56,5 +57,6 @@ struct ResultsView: View {
         withAnimation(reduceMotion ? .easeInOut(duration: 0.2) : .spring(duration: 0.6, bounce: 0.35)) {
             isRevealed = true
         }
+        sound.play(result.outcome.crewWon ? .crewWins : .impostersWin)
     }
 }

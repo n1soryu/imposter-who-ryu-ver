@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		020DDC88A24931835B5A465A /* QuickAccuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870146634EACEF42751C20CB /* QuickAccuseView.swift */; };
+		068CF1293B9EF5F3EB49BEE6 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3073CBBA15A53B2929B97F /* SoundPlayer.swift */; };
+		070761E3D7B2FEBA8BFE10CD /* SoundToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC4DC27C97C59004E6F182 /* SoundToggleButton.swift */; };
 		0ED4EFD47A25E806C4D6D879 /* StandingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3170B0AEFBEE289CFB0D51 /* StandingRow.swift */; };
+		0F564629F228AD8221F61E20 /* times-up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3B47511DAC0C8AB851E36EA3 /* times-up.wav */; };
 		0FBD7077A28C102D5DE673CC /* NavigationBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C428E940269C0847733A5 /* NavigationBarAppearance.swift */; };
 		13D4FE537346ED3A5C139CFC /* CustomPackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441FB3C908C2649AEC556832 /* CustomPackStore.swift */; };
 		1910FAFB26E88E23E8354ECD /* CrewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F52E3AC31FBCED843FB90D /* CrewCard.swift */; };
@@ -26,6 +29,7 @@
 		2E38CDCA5758046C3692D170 /* Standings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DD125AC068A6110F34BD93 /* Standings.swift */; };
 		31C03D6284BA1D87893A0B35 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C43622BE7EB9B6F1381B1F5 /* Countdown.swift */; };
 		32076E6242725D2C5C0F6954 /* BricolageGrotesque-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C750C898DFE9BE853804FFAF /* BricolageGrotesque-SemiBold.ttf */; };
+		33746ED4756D43D4B6D8CE89 /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C8358CFEAEC3F0D2039587 /* SoundEffect.swift */; };
 		342E65B933AFD2ACB06A59BB /* PassThePhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF158155106E7BDF4445FC6A /* PassThePhoneView.swift */; };
 		34AB071487BDF62D2B057E28 /* GamePhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F822681E96A857CDCB685 /* GamePhaseView.swift */; };
 		34B8818526DA457980BF689E /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34453D10B7D0290E08EE20A /* GameStore.swift */; };
@@ -71,6 +75,8 @@
 		B244147BD3B782D5B955186A /* RosterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6E1B2AA1EA3EB25ED315DB /* RosterStore.swift */; };
 		B6217704E539D26C0C42068F /* CardFan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6F37F69463F7988D7088F /* CardFan.swift */; };
 		BA77ED1AF2C8FB4869CA1E60 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5594FC6051CCF05A43474CB /* GameView.swift */; };
+		BAA6857CAEEF805F260FD594 /* imposters-win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83757793DCF7B2395FC548EA /* imposters-win.wav */; };
+		BB35A48681884DCC715B7BB6 /* crew-wins.wav in Resources */ = {isa = PBXBuildFile; fileRef = D19CE217D81D3CA95A80085B /* crew-wins.wav */; };
 		C0C1D7F47A1BD3EF566176E6 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3F6C9642E928DE943FCDD /* RulesView.swift */; };
 		C6D39AF5C455C66F7EBA83B0 /* RuleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0AD7329A2126818BE40460 /* RuleStep.swift */; };
 		C941056F86B976B1F12A464B /* CardWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1737631D2761EFEE9DE72E /* CardWord.swift */; };
@@ -112,6 +118,7 @@
 		37068E57905CC51C728554F9 /* TurnOrderStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnOrderStrip.swift; sourceTree = "<group>"; };
 		37558849CCC98E0E5C7B5092 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 		37D1135955C49A29A77DC058 /* DealBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealBar.swift; sourceTree = "<group>"; };
+		3B47511DAC0C8AB851E36EA3 /* times-up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "times-up.wav"; sourceTree = "<group>"; };
 		3FAA8E4968526EB4267CBEBF /* AddPlayerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerField.swift; sourceTree = "<group>"; };
 		42448B07B17285C474A15E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		427BED792DEF4D518087142C /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
@@ -130,11 +137,13 @@
 		613F15AD439A1B6BB8F60D1F /* PackEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackEditorView.swift; sourceTree = "<group>"; };
 		65A775927168869E943EE3AB /* CardFace+Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardFace+Accessibility.swift"; sourceTree = "<group>"; };
 		68C270EA42F593F9065ADDCE /* LastChanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastChanceView.swift; sourceTree = "<group>"; };
+		75C8358CFEAEC3F0D2039587 /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
 		773AC4933AC9FE2C1A23AB5C /* PasteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteListView.swift; sourceTree = "<group>"; };
 		79BFA3A1A043609DB52A283F /* IntelOptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelOptionRow.swift; sourceTree = "<group>"; };
 		7B63816FC2DE7F6BE042558E /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		7C9C428E940269C0847733A5 /* NavigationBarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearance.swift; sourceTree = "<group>"; };
 		82B5EAAEE9B9F91D2683C8B8 /* ImposterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImposterCard.swift; sourceTree = "<group>"; };
+		83757793DCF7B2395FC548EA /* imposters-win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "imposters-win.wav"; sourceTree = "<group>"; };
 		86EF8BCFC77244B27EFB085A /* WordEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEditorView.swift; sourceTree = "<group>"; };
 		870146634EACEF42751C20CB /* QuickAccuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAccuseView.swift; sourceTree = "<group>"; };
 		8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordLibrary+Environment.swift"; sourceTree = "<group>"; };
@@ -143,6 +152,7 @@
 		92F52E3AC31FBCED843FB90D /* CrewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewCard.swift; sourceTree = "<group>"; };
 		95E847922BDB78BE17ED8835 /* DiscussionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionView.swift; sourceTree = "<group>"; };
 		986A2F5E01E4B095640D509F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		9B3073CBBA15A53B2929B97F /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		A0A569DFEF767949B6B048CB /* VotingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingView.swift; sourceTree = "<group>"; };
 		A127333C6C32A147965739BE /* PlayersContinueBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersContinueBar.swift; sourceTree = "<group>"; };
 		A3B6B259016BEAEE483AFF1A /* ScoringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringKey.swift; sourceTree = "<group>"; };
@@ -161,6 +171,7 @@
 		C750C898DFE9BE853804FFAF /* BricolageGrotesque-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-SemiBold.ttf"; sourceTree = "<group>"; };
 		C78E1F082FDA2756CDCA6BDF /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
 		CD217E8F62D140329665D4AD /* PacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacksView.swift; sourceTree = "<group>"; };
+		D19CE217D81D3CA95A80085B /* crew-wins.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "crew-wins.wav"; sourceTree = "<group>"; };
 		D258C7BAC29141036260F567 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 		D31ADD705B2353112993BC67 /* SuspectPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspectPicker.swift; sourceTree = "<group>"; };
 		D4174B017D70C3DE1CC57181 /* SuspectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspectRow.swift; sourceTree = "<group>"; };
@@ -180,6 +191,7 @@
 		F294730B761063BE79CBECBC /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		F37643DA9498795D37DBFEDF /* WordCard+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordCard+Identifiable.swift"; sourceTree = "<group>"; };
 		F4D67053F1F906C87AC00107 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
+		F5AC4DC27C97C59004E6F182 /* SoundToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundToggleButton.swift; sourceTree = "<group>"; };
 		FE4C3D0353CD9AC39EEDD191 /* AddWordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordField.swift; sourceTree = "<group>"; };
 		FF158155106E7BDF4445FC6A /* PassThePhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassThePhoneView.swift; sourceTree = "<group>"; };
 		FF325A3B9C01A5ECDEDFB69C /* HoldToRevealCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldToRevealCard.swift; sourceTree = "<group>"; };
@@ -226,6 +238,16 @@
 				0073C93DE538A015CB920EB3 /* RuleStepRow.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		1ED5FBD98DC3F748224233F1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D19CE217D81D3CA95A80085B /* crew-wins.wav */,
+				83757793DCF7B2395FC548EA /* imposters-win.wav */,
+				3B47511DAC0C8AB851E36EA3 /* times-up.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		20DDB10D6D33ED3A59D4A892 /* Model */ = {
@@ -290,6 +312,7 @@
 			children = (
 				0B3A8772D0F48E709895BFE6 /* Assets.xcassets */,
 				5F6B798A84703D586D1B0239 /* Fonts */,
+				1ED5FBD98DC3F748224233F1 /* Sounds */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -302,6 +325,7 @@
 				7C0F46BE3FDB1EF99CAD97FA /* Features */,
 				20DDB10D6D33ED3A59D4A892 /* Model */,
 				33EDE0343381CFC92A9E0F30 /* Navigation */,
+				7023B12CEF5970D3DBE491EC /* Sound */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -338,6 +362,16 @@
 				4AE70D1256C7491D7CF2833C /* Sources */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		7023B12CEF5970D3DBE491EC /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				75C8358CFEAEC3F0D2039587 /* SoundEffect.swift */,
+				9B3073CBBA15A53B2929B97F /* SoundPlayer.swift */,
+				F5AC4DC27C97C59004E6F182 /* SoundToggleButton.swift */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		761EA190E689497DF693A020 /* Design */ = {
@@ -535,6 +569,9 @@
 				7DE8DD172D27C48E60368F76 /* BricolageGrotesque-ExtraBold.ttf in Resources */,
 				32076E6242725D2C5C0F6954 /* BricolageGrotesque-SemiBold.ttf in Resources */,
 				EB8EDE5DD86429AF80B0ADF0 /* OFL.txt in Resources */,
+				BB35A48681884DCC715B7BB6 /* crew-wins.wav in Resources */,
+				BAA6857CAEEF805F260FD594 /* imposters-win.wav in Resources */,
+				0F564629F228AD8221F61E20 /* times-up.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +650,9 @@
 				218AB5B31C6C99E63B160F2E /* ScoringKey.swift in Sources */,
 				5FD1CBC7EE635A81BE8A2D11 /* SectionTitle.swift in Sources */,
 				3D89E0B60CF26173F07FD415 /* SelectableChip.swift in Sources */,
+				33746ED4756D43D4B6D8CE89 /* SoundEffect.swift in Sources */,
+				068CF1293B9EF5F3EB49BEE6 /* SoundPlayer.swift in Sources */,
+				070761E3D7B2FEBA8BFE10CD /* SoundToggleButton.swift in Sources */,
 				0ED4EFD47A25E806C4D6D879 /* StandingRow.swift in Sources */,
 				2E38CDCA5758046C3692D170 /* Standings.swift in Sources */,
 				9B05E0FFE2B1DBBD70D657B0 /* SuspectPicker.swift in Sources */,

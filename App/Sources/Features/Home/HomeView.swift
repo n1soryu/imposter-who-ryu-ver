@@ -9,6 +9,9 @@ struct HomeView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
+            SoundToggleButton()
+                .frame(maxWidth: .infinity, alignment: .trailing)
+
             CardFan()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .padding(.vertical, 24)
@@ -53,4 +56,5 @@ struct HomeView: View {
         HomeView {}
     }
     .environment(\.wordLibrary, .bundledOrEmpty())
+    .environment(SoundPlayer(defaults: UserDefaults(suiteName: "preview-home") ?? .standard))
 }

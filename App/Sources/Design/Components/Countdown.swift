@@ -6,6 +6,7 @@ struct Countdown: View {
 
     @State private var deadline: Date?
     @State private var isExpired = false
+    @Environment(SoundPlayer.self) private var sound
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
@@ -34,8 +35,13 @@ struct Countdown: View {
             deadline = .now.addingTimeInterval(TimeInterval(seconds))
         }
         .task {
-            try? await Task.sleep(for: .seconds(seconds))
-            isExpired = true
+            do {
+                try await Task.sleep(for: .seconds(seconds))
+                isExpired = true
+                sound.play(.timesUp)
+            } catch {
+                // Cancelled because the turn ended early, so there's nothing to announce.
+            }
         }
         .sensoryFeedback(.warning, trigger: isExpired) { _, expired in expired }
     }
@@ -57,4 +63,5 @@ struct Countdown: View {
     }
     .padding()
     .background(Color.felt)
+    .environment(SoundPlayer(defaults: UserDefaults(suiteName: "preview-countdown") ?? .standard))
 }
