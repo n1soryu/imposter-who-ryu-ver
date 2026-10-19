@@ -7,6 +7,7 @@ struct RulesView: View {
 
     @Environment(RulesStore.self) private var store
     @Environment(RosterStore.self) private var roster
+    @Environment(GameStore.self) private var game
     @Environment(\.wordLibrary) private var library
 
     var body: some View {
@@ -31,6 +32,10 @@ struct RulesView: View {
                     .disabled(wordsInPlay == 0 || playerCount < GameSettings.minimumPlayers)
                 if wordsInPlay == 0 {
                     Text("Pick at least one category and difficulty.")
+                        .font(.footnote)
+                        .foregroundStyle(Color.imposterInk)
+                } else if let problem = game.problem {
+                    Text(problem)
                         .font(.footnote)
                         .foregroundStyle(Color.imposterInk)
                 }
@@ -344,4 +349,5 @@ extension GameSettings.ImposterIntel {
     .environment(\.wordLibrary, library)
     .environment(roster)
     .environment(RulesStore(library: library, defaults: UserDefaults(suiteName: "preview-rules")!))
+    .environment(GameStore(defaults: UserDefaults(suiteName: "preview-rules")!))
 }

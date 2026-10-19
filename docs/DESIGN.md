@@ -9,6 +9,9 @@ cards laid on a felt table.
   passed around, so the table is always dark.
 - **Ink colour is information.** Yellow is the crew and the secret word. Pink is the
   imposter. Never use either colour for decoration.
+- **Nothing leaks during the deal.** While the phone is passed around, every card face uses
+  the same card stock and the same ink. Only the words differ. A glance across the table must
+  never reveal a role. The full pink imposter card only appears at the reveal.
 - **One loud element: the card.** It's big, slightly tilted, and has a second ink printed
   off-register behind it. Everything around it stays quiet: left-aligned text, plain
   lists, no gradients, no soft drop shadows.

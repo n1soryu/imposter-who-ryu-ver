@@ -11,6 +11,7 @@
 		0FBD7077A28C102D5DE673CC /* NavigationBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C428E940269C0847733A5 /* NavigationBarAppearance.swift */; };
 		2891FE1DF150B6CFB3D6008C /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78E1F082FDA2756CDCA6BDF /* HowToPlayView.swift */; };
 		32076E6242725D2C5C0F6954 /* BricolageGrotesque-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C750C898DFE9BE853804FFAF /* BricolageGrotesque-SemiBold.ttf */; };
+		34B8818526DA457980BF689E /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34453D10B7D0290E08EE20A /* GameStore.swift */; };
 		37B5E0475A8EA7F5FEAA194C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A8772D0F48E709895BFE6 /* Assets.xcassets */; };
 		57D6741AB2559268577D7E00 /* RulesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A635F8637CD891F083C306 /* RulesStore.swift */; };
 		64165830C9CAC7576A81D016 /* WordLibrary+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */; };
@@ -21,6 +22,8 @@
 		8DBA7955B45C10D1A6DA35C9 /* ImposterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194304FB5A786982E7C05EF2 /* ImposterApp.swift */; };
 		B20570A35D7BF57C0270F274 /* ImposterKit in Frameworks */ = {isa = PBXBuildFile; productRef = B6F0A28755A3E969A5064F41 /* ImposterKit */; };
 		B244147BD3B782D5B955186A /* RosterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6E1B2AA1EA3EB25ED315DB /* RosterStore.swift */; };
+		B33986A5E87576ED5047E26F /* DealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA122ADE611BEF84CAD0DD /* DealView.swift */; };
+		BA77ED1AF2C8FB4869CA1E60 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5594FC6051CCF05A43474CB /* GameView.swift */; };
 		C4F75BB9C19713E869645712 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09EAABBDFBD08E0138D56ED /* Theme.swift */; };
 		D24CF1BF551A6814153FD415 /* PillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343163C16639E26888F904F /* PillButtonStyle.swift */; };
 		EB8EDE5DD86429AF80B0ADF0 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7B63816FC2DE7F6BE042558E /* OFL.txt */; };
@@ -38,6 +41,8 @@
 		7B63816FC2DE7F6BE042558E /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		7C9C428E940269C0847733A5 /* NavigationBarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearance.swift; sourceTree = "<group>"; };
 		8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordLibrary+Environment.swift"; sourceTree = "<group>"; };
+		AFEA122ADE611BEF84CAD0DD /* DealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealView.swift; sourceTree = "<group>"; };
+		B34453D10B7D0290E08EE20A /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
 		B702912E8123390C8646D6D5 /* ImposterKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ImposterKit; path = ImposterKit; sourceTree = SOURCE_ROOT; };
 		BDDE29818A37A7B8D0093E4A /* Imposter.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Imposter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09EAABBDFBD08E0138D56ED /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 		D258C7BAC29141036260F567 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 		D553989FC9FC68313D4D1C81 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
 		E3BBE39EF0956CE80C1414B6 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
+		E5594FC6051CCF05A43474CB /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		F0A635F8637CD891F083C306 /* RulesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +95,7 @@
 		20DDB10D6D33ED3A59D4A892 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B34453D10B7D0290E08EE20A /* GameStore.swift */,
 				1B6E1B2AA1EA3EB25ED315DB /* RosterStore.swift */,
 				F0A635F8637CD891F083C306 /* RulesStore.swift */,
 				8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */,
@@ -154,6 +161,15 @@
 			path = Design;
 			sourceTree = "<group>";
 		};
+		7A9C685E192D2029BD4B30F1 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				AFEA122ADE611BEF84CAD0DD /* DealView.swift */,
+				E5594FC6051CCF05A43474CB /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		7BF0F29A994EF46F529116B7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +182,7 @@
 		7C0F46BE3FDB1EF99CAD97FA /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				7A9C685E192D2029BD4B30F1 /* Game */,
 				113760357A638FE5F15E3D4E /* Home */,
 				0817310E62E8DC2A75BEE712 /* Players */,
 				C835E7913E719D764D28B969 /* Setup */,
@@ -277,6 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33986A5E87576ED5047E26F /* DealView.swift in Sources */,
+				34B8818526DA457980BF689E /* GameStore.swift in Sources */,
+				BA77ED1AF2C8FB4869CA1E60 /* GameView.swift in Sources */,
 				870E4802384F011C2F4A39B9 /* HomeView.swift in Sources */,
 				2891FE1DF150B6CFB3D6008C /* HowToPlayView.swift in Sources */,
 				8DBA7955B45C10D1A6DA35C9 /* ImposterApp.swift in Sources */,

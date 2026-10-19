@@ -6,6 +6,7 @@ struct ImposterApp: App {
     private let library: WordLibrary
     @State private var rosterStore: RosterStore
     @State private var rulesStore: RulesStore
+    @State private var gameStore = GameStore()
 
     init() {
         let library = WordLibrary.bundledOrEmpty()
@@ -21,6 +22,7 @@ struct ImposterApp: App {
                 .environment(\.wordLibrary, library)
                 .environment(rosterStore)
                 .environment(rulesStore)
+                .environment(gameStore)
                 .preferredColorScheme(.dark)
         }
     }
@@ -30,35 +32,34 @@ struct ImposterApp: App {
 enum Route: Hashable {
     case players
     case rules
-    case deal
+    case game
 }
 
 struct RootView: View {
     @State private var path: [Route] = []
+
+    @Environment(\.wordLibrary) private var library
+    @Environment(RosterStore.self) private var roster
+    @Environment(RulesStore.self) private var rules
+    @Environment(GameStore.self) private var game
 
     var body: some View {
         NavigationStack(path: $path) {
             HomeView { path.append(.players) }
                 .navigationDestination(for: Route.self) { route in
                     switch route {
-                    case .players: PlayersView { path.append(.rules) }
-                    case .rules: RulesView { path.append(.deal) }
-                    case .deal: DealPlaceholderView()
+                    case .players:
+                        PlayersView { path.append(.rules) }
+                    case .rules:
+                        RulesView {
+                            if game.start(players: roster.players, rules: rules.rules, library: library) {
+                                path.append(.game)
+                            }
+                        }
+                    case .game:
+                        GameView { path.removeAll() }
                     }
                 }
         }
-    }
-}
-
-/// Placeholder for the card deal, which arrives with roadmap feature 1.4.
-private struct DealPlaceholderView: View {
-    var body: some View {
-        ContentUnavailableView(
-            "Dealing is next",
-            systemImage: "rectangle.portrait.on.rectangle.portrait",
-            description: Text("Passing the phone and revealing cards arrives in the next build.")
-        )
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.felt)
     }
 }
