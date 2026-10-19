@@ -23,6 +23,12 @@ final class RulesStore {
         }
     }
 
+    /// Brings the imposter count into range for the group, for example after someone leaves the table.
+    func fit(toPlayers playerCount: Int) {
+        let fitted = rules.fitted(toPlayers: playerCount)
+        if fitted != rules { rules = fitted }
+    }
+
     private func save() {
         guard let data = try? JSONEncoder().encode(rules) else { return }
         defaults.set(data, forKey: Self.storageKey)

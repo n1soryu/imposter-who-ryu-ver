@@ -27,39 +27,3 @@ struct ImposterApp: App {
         }
     }
 }
-
-/// Screens reachable from the home screen, in the order a new game goes through them.
-enum Route: Hashable {
-    case players
-    case rules
-    case game
-}
-
-struct RootView: View {
-    @State private var path: [Route] = []
-
-    @Environment(\.wordLibrary) private var library
-    @Environment(RosterStore.self) private var roster
-    @Environment(RulesStore.self) private var rules
-    @Environment(GameStore.self) private var game
-
-    var body: some View {
-        NavigationStack(path: $path) {
-            HomeView { path.append(.players) }
-                .navigationDestination(for: Route.self) { route in
-                    switch route {
-                    case .players:
-                        PlayersView { path.append(.rules) }
-                    case .rules:
-                        RulesView {
-                            if game.start(players: roster.players, rules: rules.rules, library: library) {
-                                path.append(.game)
-                            }
-                        }
-                    case .game:
-                        GameView { path.removeAll() }
-                    }
-                }
-        }
-    }
-}

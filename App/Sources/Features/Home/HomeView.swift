@@ -22,7 +22,7 @@ struct HomeView: View {
                 .foregroundStyle(Color.haze)
                 .padding(.top, 4)
 
-            Text("\(library.cardCount) words in \(library.categories.count) categories")
+            Text("^[\(library.cardCount) word](inflect: true) in ^[\(library.categories.count) category](inflect: true)")
                 .font(.subheadline)
                 .foregroundStyle(Color.haze)
                 .padding(.top, 12)
@@ -30,7 +30,7 @@ struct HomeView: View {
             VStack(spacing: 12) {
                 Button("New game", action: startNewGame)
                     .buttonStyle(.pill)
-                Button("How to play") { isShowingRules = true }
+                Button("How to play", action: showRules)
                     .buttonStyle(.pillSecondary)
             }
             .padding(.top, 28)
@@ -42,23 +42,9 @@ struct HomeView: View {
             HowToPlayView()
         }
     }
-}
 
-/// Three dealt cards: two crew cards with the same word and the imposter's card tucked between them.
-private struct CardFan: View {
-    var body: some View {
-        ZStack {
-            CrewCard(word: "Pizza", symbol: "🍕")
-                .rotationEffect(.degrees(-14))
-                .offset(x: -70, y: 12)
-            CrewCard(word: "Pizza", symbol: "🍕")
-                .rotationEffect(.degrees(13))
-                .offset(x: 70, y: 16)
-            ImposterCard()
-                .rotationEffect(.degrees(-2))
-        }
-        .frame(maxWidth: 200)
-        .accessibilityHidden(true)
+    private func showRules() {
+        isShowingRules = true
     }
 }
 

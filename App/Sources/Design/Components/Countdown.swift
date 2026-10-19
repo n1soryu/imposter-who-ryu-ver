@@ -10,24 +10,25 @@ struct Countdown: View {
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
             let remaining = remainingSeconds(at: context.date)
+
             VStack(alignment: .leading, spacing: 8) {
-                Text(isExpired ? "Time's up" : Self.format(remaining))
+                Text(isExpired ? "Time's up" : Duration.seconds(remaining).formatted(.time(pattern: .minuteSecond)))
                     .font(.displaySemiBold(22, relativeTo: .title3))
                     .monospacedDigit()
                     .foregroundStyle(isExpired ? Color.imposterInk : Color.cardStock)
                     .contentTransition(.numericText(countsDown: true))
-                GeometryReader { proxy in
-                    Capsule()
-                        .fill(Color.feltRaised)
-                        .overlay(alignment: .leading) {
-                            Capsule()
-                                .fill(isExpired ? Color.imposterInk : Color.crewInk)
-                                .frame(width: proxy.size.width * fraction(remaining))
-                        }
-                }
-                .frame(height: 8)
-                .animation(.linear(duration: 1), value: remaining)
+
+                Rectangle()
+                    .fill(isExpired ? Color.imposterInk : Color.crewInk)
+                    .scaleEffect(x: fraction(remaining), anchor: .leading)
+                    .frame(height: 8)
+                    .background(Color.feltRaised)
+                    .clipShape(.capsule)
+                    .animation(.linear(duration: 1), value: remaining)
             }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Timer")
+            .accessibilityValue(isExpired ? "Time's up" : "\(remaining) seconds left")
         }
         .onAppear {
             deadline = .now.addingTimeInterval(TimeInterval(seconds))
@@ -37,21 +38,15 @@ struct Countdown: View {
             isExpired = true
         }
         .sensoryFeedback(.warning, trigger: isExpired) { _, expired in expired }
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel(isExpired ? "Time's up" : "Timer running, \(seconds) seconds")
     }
 
     private func remainingSeconds(at date: Date) -> Int {
         guard let deadline else { return seconds }
-        return max(0, Int(deadline.timeIntervalSince(date).rounded(.up)))
+        return max(0, min(seconds, Int(deadline.timeIntervalSince(date).rounded(.up))))
     }
 
-    private func fraction(_ remaining: Int) -> CGFloat {
-        seconds > 0 ? CGFloat(remaining) / CGFloat(seconds) : 0
-    }
-
-    static func format(_ seconds: Int) -> String {
-        seconds >= 60 ? String(format: "%d:%02d", seconds / 60, seconds % 60) : "\(seconds)s"
+    private func fraction(_ remaining: Int) -> Double {
+        seconds > 0 ? Double(remaining) / Double(seconds) : 0
     }
 }
 

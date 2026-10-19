@@ -8,7 +8,7 @@ import Observation
 final class GameStore {
     private(set) var session: GameSession?
     /// Why the last attempt to start or continue a game failed.
-    private(set) var problem: String?
+    var problem: String?
 
     @ObservationIgnored private let defaults: UserDefaults
     private static let historyKey = "wordHistory.v1"

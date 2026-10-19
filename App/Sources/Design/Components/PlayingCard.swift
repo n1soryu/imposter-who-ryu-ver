@@ -43,40 +43,6 @@ struct PlayingCard<Content: View>: View {
     }
 }
 
-/// The card a crew member sees: yellow, holding the secret word.
-struct CrewCard: View {
-    var word: String
-    var symbol: String
-
-    var body: some View {
-        PlayingCard(face: .crewInk, misprint: .imposterInk, cornerMark: symbol) {
-            CardWord(text: word)
-        }
-    }
-}
-
-/// The card an imposter sees: pink, with no secret word.
-struct ImposterCard: View {
-    var body: some View {
-        PlayingCard(face: .imposterInk, misprint: .crewInk, cornerMark: "?") {
-            CardWord(text: "Imposter")
-        }
-    }
-}
-
-/// The big word printed in the middle of a card.
-struct CardWord: View {
-    var text: String
-
-    var body: some View {
-        Text(text)
-            .font(.display(44))
-            .multilineTextAlignment(.center)
-            .minimumScaleFactor(0.5)
-            .foregroundStyle(Color.felt)
-    }
-}
-
 #Preview {
     HStack(spacing: 24) {
         CrewCard(word: "Pizza", symbol: "🍕")

@@ -7,62 +7,158 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0534DE6114E87743B9FA493F /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D553989FC9FC68313D4D1C81 /* RulesView.swift */; };
+		020DDC88A24931835B5A465A /* QuickAccuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870146634EACEF42751C20CB /* QuickAccuseView.swift */; };
+		0ED4EFD47A25E806C4D6D879 /* StandingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3170B0AEFBEE289CFB0D51 /* StandingRow.swift */; };
 		0FBD7077A28C102D5DE673CC /* NavigationBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C428E940269C0847733A5 /* NavigationBarAppearance.swift */; };
+		1910FAFB26E88E23E8354ECD /* CrewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F52E3AC31FBCED843FB90D /* CrewCard.swift */; };
+		1B18FDB73522B02BA96A280D /* LastChanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C270EA42F593F9065ADDCE /* LastChanceView.swift */; };
+		1B8E4BF6B4394A80AC31BBAE /* PeekStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090F71B2804AFB093E029A9 /* PeekStep.swift */; };
+		1EA73F1D2804256DBB90CE9D /* DealtCardFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77298EA93B4615018A9BF0B /* DealtCardFace.swift */; };
+		1EAA317259787FED50622C61 /* HoldToRevealCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF325A3B9C01A5ECDEDFB69C /* HoldToRevealCard.swift */; };
+		218AB5B31C6C99E63B160F2E /* ScoringKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B6B259016BEAEE483AFF1A /* ScoringKey.swift */; };
+		22E5EF3AFFDD1756F7B9A928 /* RoundFactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB106C66AA77497331E93C9 /* RoundFactsModel.swift */; };
+		23AD0853AEA7553895669B46 /* DealBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1135955C49A29A77DC058 /* DealBar.swift */; };
 		2891FE1DF150B6CFB3D6008C /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78E1F082FDA2756CDCA6BDF /* HowToPlayView.swift */; };
+		2CCC3A88A6ADA73ACDB4273E /* ResultSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9DF0225926CE7A977286C /* ResultSummary.swift */; };
+		2E38CDCA5758046C3692D170 /* Standings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DD125AC068A6110F34BD93 /* Standings.swift */; };
 		31C03D6284BA1D87893A0B35 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C43622BE7EB9B6F1381B1F5 /* Countdown.swift */; };
 		32076E6242725D2C5C0F6954 /* BricolageGrotesque-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C750C898DFE9BE853804FFAF /* BricolageGrotesque-SemiBold.ttf */; };
+		342E65B933AFD2ACB06A59BB /* PassThePhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF158155106E7BDF4445FC6A /* PassThePhoneView.swift */; };
+		34AB071487BDF62D2B057E28 /* GamePhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F822681E96A857CDCB685 /* GamePhaseView.swift */; };
 		34B8818526DA457980BF689E /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34453D10B7D0290E08EE20A /* GameStore.swift */; };
 		37B5E0475A8EA7F5FEAA194C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A8772D0F48E709895BFE6 /* Assets.xcassets */; };
+		3B6B09E3B611680140687552 /* SuspectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4174B017D70C3DE1CC57181 /* SuspectRow.swift */; };
+		3D89E0B60CF26173F07FD415 /* SelectableChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429BD2113A9FF3EB999E84DD /* SelectableChip.swift */; };
+		4116E84F87032AFA641FA436 /* WordsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91798ACDD3B98C9C0AEA2C9 /* WordsSection.swift */; };
+		48CBC63B8782AC2A50117601 /* CardFace+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A775927168869E943EE3AB /* CardFace+Accessibility.swift */; };
+		5642FFB33207E5250A0C5FF4 /* AddPlayerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA8E4968526EB4267CBEBF /* AddPlayerField.swift */; };
 		57D6741AB2559268577D7E00 /* RulesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A635F8637CD891F083C306 /* RulesStore.swift */; };
+		5FD1CBC7EE635A81BE8A2D11 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37558849CCC98E0E5C7B5092 /* SectionTitle.swift */; };
+		61FBCE99F6B9DFBFFCC80EC9 /* RoundsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45323AAD7928B8B9027A9349 /* RoundsSection.swift */; };
+		62014EBF0789534567A381A5 /* TurnOrderStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37068E57905CC51C728554F9 /* TurnOrderStrip.swift */; };
 		64165830C9CAC7576A81D016 /* WordLibrary+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */; };
 		6583692A1528DA9EA77F0C77 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258C7BAC29141036260F567 /* PlayingCard.swift */; };
-		6BF1C0F380FD2C2199ADF04B /* CluesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9B9BEB20302E97D658CB5 /* CluesView.swift */; };
+		6A2268AFF536E4A332E78D63 /* HouseRules+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33002CFB5AEDBAF34C285500 /* HouseRules+Copy.swift */; };
+		6D172621E300B455EF2142F0 /* Typeface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A0589D1B3EB8E2CC3BF0A /* Typeface.swift */; };
+		6D8115C721AC146E67D6AB69 /* TrollFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26B39DCFCA0057CBC763B9 /* TrollFrequency.swift */; };
+		74C0ADA121F4A7EA38F9C1C8 /* RoundFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EC521B71B262FEBD7F9DA /* RoundFacts.swift */; };
+		750F02118992BE47BEA833F9 /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D67053F1F906C87AC00107 /* CardBack.swift */; };
 		763E3F01C1D2C94A7ADC978B /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4210F0D9E7F4B0457B1E8 /* PlayersView.swift */; };
+		7964921488AB6BEE429386FE /* FactGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3F66457AD5EC9032115EF7 /* FactGroup.swift */; };
+		79A5D5E9226B43F126B311BE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986A2F5E01E4B095640D509F /* RootView.swift */; };
+		7A471D84AC5CA60D831A7D3E /* PlayersContinueBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127333C6C32A147965739BE /* PlayersContinueBar.swift */; };
 		7DE8DD172D27C48E60368F76 /* BricolageGrotesque-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0945B377831E58C5390DBE12 /* BricolageGrotesque-ExtraBold.ttf */; };
+		854C4539F63D0ADE5AC3ED6F /* RevealedCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207102FF3E9FEE4FA10D9791 /* RevealedCards.swift */; };
 		870E4802384F011C2F4A39B9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471A78966DA6BA963C93325F /* HomeView.swift */; };
-		88F4940098826A571513EC5F /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A32427FC24856F48E8DD68B /* ScoreboardView.swift */; };
+		8AA4D1D6364B4CC21B1B6475 /* DiscussionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E847922BDB78BE17ED8835 /* DiscussionView.swift */; };
+		8C5B82A59E682AAA0E0DB72E /* ImposterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B5EAAEE9B9F91D2683C8B8 /* ImposterCard.swift */; };
+		8CDC59528A501003B62FB9F0 /* ImposterFaceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4689B4372BD939CE5768A2D5 /* ImposterFaceContent.swift */; };
 		8DBA7955B45C10D1A6DA35C9 /* ImposterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194304FB5A786982E7C05EF2 /* ImposterApp.swift */; };
+		8DCE9CE12F802F30340C2DF2 /* VotingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A569DFEF767949B6B048CB /* VotingView.swift */; };
+		989F0E6529167FC1F9476851 /* RuleStepRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0073C93DE538A015CB920EB3 /* RuleStepRow.swift */; };
+		9B05E0FFE2B1DBBD70D657B0 /* SuspectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31ADD705B2353112993BC67 /* SuspectPicker.swift */; };
+		AAD338540AEAA645E0C8F282 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BED792DEF4D518087142C /* Route.swift */; };
 		B20570A35D7BF57C0270F274 /* ImposterKit in Frameworks */ = {isa = PBXBuildFile; productRef = B6F0A28755A3E969A5064F41 /* ImposterKit */; };
+		B21115149F0F12731986D801 /* AllVotesInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0933D8807FC5F463D12A49AE /* AllVotesInView.swift */; };
 		B244147BD3B782D5B955186A /* RosterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6E1B2AA1EA3EB25ED315DB /* RosterStore.swift */; };
-		B33986A5E87576ED5047E26F /* DealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEA122ADE611BEF84CAD0DD /* DealView.swift */; };
-		B73BF66D6B86DB43894CBB88 /* RevealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CAF7278FDD814C361FBD01 /* RevealView.swift */; };
+		B6217704E539D26C0C42068F /* CardFan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6F37F69463F7988D7088F /* CardFan.swift */; };
 		BA77ED1AF2C8FB4869CA1E60 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5594FC6051CCF05A43474CB /* GameView.swift */; };
-		C4F75BB9C19713E869645712 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09EAABBDFBD08E0138D56ED /* Theme.swift */; };
+		C0C1D7F47A1BD3EF566176E6 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3F6C9642E928DE943FCDD /* RulesView.swift */; };
+		C6D39AF5C455C66F7EBA83B0 /* RuleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0AD7329A2126818BE40460 /* RuleStep.swift */; };
+		C941056F86B976B1F12A464B /* CardWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1737631D2761EFEE9DE72E /* CardWord.swift */; };
+		CDB91E9EB63123702C552411 /* BallotTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8255921096F92236239ABBC /* BallotTurn.swift */; };
 		D24CF1BF551A6814153FD415 /* PillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343163C16639E26888F904F /* PillButtonStyle.swift */; };
+		D41CF5078565F2E54FC69C38 /* CluesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEFD7BC405FD65E87A3F8E7 /* CluesView.swift */; };
+		E5B38AFE100F728405EDC63B /* ImposterIntelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B15B8D936AB3B6619D0865 /* ImposterIntelSection.swift */; };
 		EB8EDE5DD86429AF80B0ADF0 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7B63816FC2DE7F6BE042558E /* OFL.txt */; };
-		FB61063C801BD8E5426DB1BE /* VotingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9919E9D323116221E55ADFA /* VotingView.swift */; };
+		EC075461FC4B27E7131098B4 /* IntelOptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFA3A1A043609DB52A283F /* IntelOptionRow.swift */; };
+		EF1F23CAC5547719740CD582 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F294730B761063BE79CBECBC /* ResultsView.swift */; };
+		EFB189964588181B52CDA5B0 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A6ECD322E8089538AB7D0 /* ScoreboardView.swift */; };
+		F2FA0DBE7723A40DB581CCA1 /* RuleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61B3E05ABB05263FA866CBF /* RuleLabel.swift */; };
+		F7007D6F8662F2A36C84A464 /* HouseRulesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58FF046DB4464C11204173 /* HouseRulesSection.swift */; };
+		FAEBDAC1C2626C61F18AAB11 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E686E8F21B5592DE93EB3A7B /* Metrics.swift */; };
+		FC9399189E4125DA1E4E1961 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AC0A6807264988E7A7CFA /* PlayerRow.swift */; };
+		FCEC5B386DC711D23D4F01DF /* ImpostersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F08BEF873275AC87758D7 /* ImpostersSection.swift */; };
+		FF8ED9F5A500607B7B3FAF77 /* DealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE591611E387D04AF03EED93 /* DealView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0073C93DE538A015CB920EB3 /* RuleStepRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleStepRow.swift; sourceTree = "<group>"; };
+		0090F71B2804AFB093E029A9 /* PeekStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekStep.swift; sourceTree = "<group>"; };
+		0933D8807FC5F463D12A49AE /* AllVotesInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllVotesInView.swift; sourceTree = "<group>"; };
 		0945B377831E58C5390DBE12 /* BricolageGrotesque-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-ExtraBold.ttf"; sourceTree = "<group>"; };
 		0B3A8772D0F48E709895BFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C43622BE7EB9B6F1381B1F5 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
+		141A6ECD322E8089538AB7D0 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		194304FB5A786982E7C05EF2 /* ImposterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImposterApp.swift; sourceTree = "<group>"; };
-		1A32427FC24856F48E8DD68B /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		1B6E1B2AA1EA3EB25ED315DB /* RosterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterStore.swift; sourceTree = "<group>"; };
+		1C26B39DCFCA0057CBC763B9 /* TrollFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrollFrequency.swift; sourceTree = "<group>"; };
+		207102FF3E9FEE4FA10D9791 /* RevealedCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealedCards.swift; sourceTree = "<group>"; };
+		309F08BEF873275AC87758D7 /* ImpostersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostersSection.swift; sourceTree = "<group>"; };
+		33002CFB5AEDBAF34C285500 /* HouseRules+Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HouseRules+Copy.swift"; sourceTree = "<group>"; };
+		37068E57905CC51C728554F9 /* TurnOrderStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnOrderStrip.swift; sourceTree = "<group>"; };
+		37558849CCC98E0E5C7B5092 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
+		37D1135955C49A29A77DC058 /* DealBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealBar.swift; sourceTree = "<group>"; };
+		3FAA8E4968526EB4267CBEBF /* AddPlayerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerField.swift; sourceTree = "<group>"; };
 		42448B07B17285C474A15E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		427BED792DEF4D518087142C /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		429BD2113A9FF3EB999E84DD /* SelectableChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableChip.swift; sourceTree = "<group>"; };
+		45323AAD7928B8B9027A9349 /* RoundsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundsSection.swift; sourceTree = "<group>"; };
+		4689B4372BD939CE5768A2D5 /* ImposterFaceContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImposterFaceContent.swift; sourceTree = "<group>"; };
 		471A78966DA6BA963C93325F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4B58FF046DB4464C11204173 /* HouseRulesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRulesSection.swift; sourceTree = "<group>"; };
 		5343163C16639E26888F904F /* PillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButtonStyle.swift; sourceTree = "<group>"; };
+		568AC0A6807264988E7A7CFA /* PlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
 		5DF4210F0D9E7F4B0457B1E8 /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
+		5FF6F37F69463F7988D7088F /* CardFan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFan.swift; sourceTree = "<group>"; };
+		65A775927168869E943EE3AB /* CardFace+Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardFace+Accessibility.swift"; sourceTree = "<group>"; };
+		68C270EA42F593F9065ADDCE /* LastChanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastChanceView.swift; sourceTree = "<group>"; };
+		79BFA3A1A043609DB52A283F /* IntelOptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelOptionRow.swift; sourceTree = "<group>"; };
 		7B63816FC2DE7F6BE042558E /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		7C9C428E940269C0847733A5 /* NavigationBarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearance.swift; sourceTree = "<group>"; };
-		85CAF7278FDD814C361FBD01 /* RevealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealView.swift; sourceTree = "<group>"; };
+		82B5EAAEE9B9F91D2683C8B8 /* ImposterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImposterCard.swift; sourceTree = "<group>"; };
+		870146634EACEF42751C20CB /* QuickAccuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAccuseView.swift; sourceTree = "<group>"; };
 		8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordLibrary+Environment.swift"; sourceTree = "<group>"; };
-		AFEA122ADE611BEF84CAD0DD /* DealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealView.swift; sourceTree = "<group>"; };
+		8D1737631D2761EFEE9DE72E /* CardWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWord.swift; sourceTree = "<group>"; };
+		8F3170B0AEFBEE289CFB0D51 /* StandingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingRow.swift; sourceTree = "<group>"; };
+		92F52E3AC31FBCED843FB90D /* CrewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewCard.swift; sourceTree = "<group>"; };
+		95E847922BDB78BE17ED8835 /* DiscussionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionView.swift; sourceTree = "<group>"; };
+		986A2F5E01E4B095640D509F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A0A569DFEF767949B6B048CB /* VotingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingView.swift; sourceTree = "<group>"; };
+		A127333C6C32A147965739BE /* PlayersContinueBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersContinueBar.swift; sourceTree = "<group>"; };
+		A3B6B259016BEAEE483AFF1A /* ScoringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringKey.swift; sourceTree = "<group>"; };
+		A42EC521B71B262FEBD7F9DA /* RoundFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFacts.swift; sourceTree = "<group>"; };
+		A61B3E05ABB05263FA866CBF /* RuleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleLabel.swift; sourceTree = "<group>"; };
+		A8B15B8D936AB3B6619D0865 /* ImposterIntelSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImposterIntelSection.swift; sourceTree = "<group>"; };
+		ADE3F6C9642E928DE943FCDD /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
 		B34453D10B7D0290E08EE20A /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
+		B6DD125AC068A6110F34BD93 /* Standings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standings.swift; sourceTree = "<group>"; };
 		B702912E8123390C8646D6D5 /* ImposterKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ImposterKit; path = ImposterKit; sourceTree = SOURCE_ROOT; };
+		B77298EA93B4615018A9BF0B /* DealtCardFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealtCardFace.swift; sourceTree = "<group>"; };
 		BDDE29818A37A7B8D0093E4A /* Imposter.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Imposter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C09EAABBDFBD08E0138D56ED /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		BE591611E387D04AF03EED93 /* DealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealView.swift; sourceTree = "<group>"; };
+		C0F9DF0225926CE7A977286C /* ResultSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSummary.swift; sourceTree = "<group>"; };
+		C25F822681E96A857CDCB685 /* GamePhaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePhaseView.swift; sourceTree = "<group>"; };
 		C750C898DFE9BE853804FFAF /* BricolageGrotesque-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-SemiBold.ttf"; sourceTree = "<group>"; };
 		C78E1F082FDA2756CDCA6BDF /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
 		D258C7BAC29141036260F567 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
-		D553989FC9FC68313D4D1C81 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		D31ADD705B2353112993BC67 /* SuspectPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspectPicker.swift; sourceTree = "<group>"; };
+		D4174B017D70C3DE1CC57181 /* SuspectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspectRow.swift; sourceTree = "<group>"; };
+		D91798ACDD3B98C9C0AEA2C9 /* WordsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsSection.swift; sourceTree = "<group>"; };
+		DAB106C66AA77497331E93C9 /* RoundFactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundFactsModel.swift; sourceTree = "<group>"; };
+		DC3A0589D1B3EB8E2CC3BF0A /* Typeface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typeface.swift; sourceTree = "<group>"; };
+		DD3F66457AD5EC9032115EF7 /* FactGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactGroup.swift; sourceTree = "<group>"; };
 		E3BBE39EF0956CE80C1414B6 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
 		E5594FC6051CCF05A43474CB /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		E686E8F21B5592DE93EB3A7B /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		E8255921096F92236239ABBC /* BallotTurn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallotTurn.swift; sourceTree = "<group>"; };
+		EC0AD7329A2126818BE40460 /* RuleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleStep.swift; sourceTree = "<group>"; };
+		EEEFD7BC405FD65E87A3F8E7 /* CluesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CluesView.swift; sourceTree = "<group>"; };
 		F0A635F8637CD891F083C306 /* RulesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesStore.swift; sourceTree = "<group>"; };
-		F3D9B9BEB20302E97D658CB5 /* CluesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CluesView.swift; sourceTree = "<group>"; };
-		F9919E9D323116221E55ADFA /* VotingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingView.swift; sourceTree = "<group>"; };
+		F294730B761063BE79CBECBC /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		F4D67053F1F906C87AC00107 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
+		FF158155106E7BDF4445FC6A /* PassThePhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassThePhoneView.swift; sourceTree = "<group>"; };
+		FF325A3B9C01A5ECDEDFB69C /* HoldToRevealCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldToRevealCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +176,9 @@
 		0817310E62E8DC2A75BEE712 /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				3FAA8E4968526EB4267CBEBF /* AddPlayerField.swift */,
+				568AC0A6807264988E7A7CFA /* PlayerRow.swift */,
+				A127333C6C32A147965739BE /* PlayersContinueBar.swift */,
 				5DF4210F0D9E7F4B0457B1E8 /* PlayersView.swift */,
 			);
 			path = Players;
@@ -96,8 +195,11 @@
 		113760357A638FE5F15E3D4E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5FF6F37F69463F7988D7088F /* CardFan.swift */,
 				471A78966DA6BA963C93325F /* HomeView.swift */,
 				C78E1F082FDA2756CDCA6BDF /* HowToPlayView.swift */,
+				EC0AD7329A2126818BE40460 /* RuleStep.swift */,
+				0073C93DE538A015CB920EB3 /* RuleStepRow.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -111,6 +213,25 @@
 				8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2FD56B88A19C6AD3BEAA4418 /* Clues */ = {
+			isa = PBXGroup;
+			children = (
+				EEEFD7BC405FD65E87A3F8E7 /* CluesView.swift */,
+				95E847922BDB78BE17ED8835 /* DiscussionView.swift */,
+				37068E57905CC51C728554F9 /* TurnOrderStrip.swift */,
+			);
+			path = Clues;
+			sourceTree = "<group>";
+		};
+		33EDE0343381CFC92A9E0F30 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				986A2F5E01E4B095640D509F /* RootView.swift */,
+				427BED792DEF4D518087142C /* Route.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		3B58D0D31641C425491D161C /* Config */ = {
@@ -137,6 +258,7 @@
 				761EA190E689497DF693A020 /* Design */,
 				7C0F46BE3FDB1EF99CAD97FA /* Features */,
 				20DDB10D6D33ED3A59D4A892 /* Model */,
+				33EDE0343381CFC92A9E0F30 /* Navigation */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -149,6 +271,20 @@
 				7B63816FC2DE7F6BE042558E /* OFL.txt */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		65C6189454D27C2A627297E7 /* Deal */ = {
+			isa = PBXGroup;
+			children = (
+				F4D67053F1F906C87AC00107 /* CardBack.swift */,
+				65A775927168869E943EE3AB /* CardFace+Accessibility.swift */,
+				B77298EA93B4615018A9BF0B /* DealtCardFace.swift */,
+				BE591611E387D04AF03EED93 /* DealView.swift */,
+				FF325A3B9C01A5ECDEDFB69C /* HoldToRevealCard.swift */,
+				4689B4372BD939CE5768A2D5 /* ImposterFaceContent.swift */,
+				0090F71B2804AFB093E029A9 /* PeekStep.swift */,
+			);
+			path = Deal;
 			sourceTree = "<group>";
 		};
 		702235C91A6614D71BF9D775 /* App */ = {
@@ -164,8 +300,9 @@
 		761EA190E689497DF693A020 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				E686E8F21B5592DE93EB3A7B /* Metrics.swift */,
 				7C9C428E940269C0847733A5 /* NavigationBarAppearance.swift */,
-				C09EAABBDFBD08E0138D56ED /* Theme.swift */,
+				DC3A0589D1B3EB8E2CC3BF0A /* Typeface.swift */,
 				7BF0F29A994EF46F529116B7 /* Components */,
 			);
 			path = Design;
@@ -174,12 +311,13 @@
 		7A9C685E192D2029BD4B30F1 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				F3D9B9BEB20302E97D658CB5 /* CluesView.swift */,
-				AFEA122ADE611BEF84CAD0DD /* DealView.swift */,
+				C25F822681E96A857CDCB685 /* GamePhaseView.swift */,
 				E5594FC6051CCF05A43474CB /* GameView.swift */,
-				85CAF7278FDD814C361FBD01 /* RevealView.swift */,
-				1A32427FC24856F48E8DD68B /* ScoreboardView.swift */,
-				F9919E9D323116221E55ADFA /* VotingView.swift */,
+				2FD56B88A19C6AD3BEAA4418 /* Clues */,
+				65C6189454D27C2A627297E7 /* Deal */,
+				871FBCF769BAD7A687D5FE9F /* Reveal */,
+				863837F15F82DB2D42D7D6C5 /* Scoreboard */,
+				D452DCF7A23F7958A18283D0 /* Voting */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -187,9 +325,16 @@
 		7BF0F29A994EF46F529116B7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8D1737631D2761EFEE9DE72E /* CardWord.swift */,
 				0C43622BE7EB9B6F1381B1F5 /* Countdown.swift */,
+				92F52E3AC31FBCED843FB90D /* CrewCard.swift */,
+				82B5EAAEE9B9F91D2683C8B8 /* ImposterCard.swift */,
+				FF158155106E7BDF4445FC6A /* PassThePhoneView.swift */,
 				5343163C16639E26888F904F /* PillButtonStyle.swift */,
 				D258C7BAC29141036260F567 /* PlayingCard.swift */,
+				429BD2113A9FF3EB999E84DD /* SelectableChip.swift */,
+				D31ADD705B2353112993BC67 /* SuspectPicker.swift */,
+				D4174B017D70C3DE1CC57181 /* SuspectRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -200,7 +345,7 @@
 				7A9C685E192D2029BD4B30F1 /* Game */,
 				113760357A638FE5F15E3D4E /* Home */,
 				0817310E62E8DC2A75BEE712 /* Players */,
-				C835E7913E719D764D28B969 /* Setup */,
+				9A0557E024B7304A6FD61CC1 /* Rules */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -213,6 +358,50 @@
 			name = Packages;
 			sourceTree = "<group>";
 		};
+		863837F15F82DB2D42D7D6C5 /* Scoreboard */ = {
+			isa = PBXGroup;
+			children = (
+				141A6ECD322E8089538AB7D0 /* ScoreboardView.swift */,
+				A3B6B259016BEAEE483AFF1A /* ScoringKey.swift */,
+				8F3170B0AEFBEE289CFB0D51 /* StandingRow.swift */,
+				B6DD125AC068A6110F34BD93 /* Standings.swift */,
+			);
+			path = Scoreboard;
+			sourceTree = "<group>";
+		};
+		871FBCF769BAD7A687D5FE9F /* Reveal */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F66457AD5EC9032115EF7 /* FactGroup.swift */,
+				68C270EA42F593F9065ADDCE /* LastChanceView.swift */,
+				C0F9DF0225926CE7A977286C /* ResultSummary.swift */,
+				F294730B761063BE79CBECBC /* ResultsView.swift */,
+				207102FF3E9FEE4FA10D9791 /* RevealedCards.swift */,
+				A42EC521B71B262FEBD7F9DA /* RoundFacts.swift */,
+				DAB106C66AA77497331E93C9 /* RoundFactsModel.swift */,
+			);
+			path = Reveal;
+			sourceTree = "<group>";
+		};
+		9A0557E024B7304A6FD61CC1 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				37D1135955C49A29A77DC058 /* DealBar.swift */,
+				33002CFB5AEDBAF34C285500 /* HouseRules+Copy.swift */,
+				4B58FF046DB4464C11204173 /* HouseRulesSection.swift */,
+				A8B15B8D936AB3B6619D0865 /* ImposterIntelSection.swift */,
+				309F08BEF873275AC87758D7 /* ImpostersSection.swift */,
+				79BFA3A1A043609DB52A283F /* IntelOptionRow.swift */,
+				45323AAD7928B8B9027A9349 /* RoundsSection.swift */,
+				A61B3E05ABB05263FA866CBF /* RuleLabel.swift */,
+				ADE3F6C9642E928DE943FCDD /* RulesView.swift */,
+				37558849CCC98E0E5C7B5092 /* SectionTitle.swift */,
+				1C26B39DCFCA0057CBC763B9 /* TrollFrequency.swift */,
+				D91798ACDD3B98C9C0AEA2C9 /* WordsSection.swift */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
 		C79C5DB648CB10CB2C2675EF = {
 			isa = PBXGroup;
 			children = (
@@ -223,12 +412,15 @@
 			);
 			sourceTree = "<group>";
 		};
-		C835E7913E719D764D28B969 /* Setup */ = {
+		D452DCF7A23F7958A18283D0 /* Voting */ = {
 			isa = PBXGroup;
 			children = (
-				D553989FC9FC68313D4D1C81 /* RulesView.swift */,
+				0933D8807FC5F463D12A49AE /* AllVotesInView.swift */,
+				E8255921096F92236239ABBC /* BallotTurn.swift */,
+				870146634EACEF42751C20CB /* QuickAccuseView.swift */,
+				A0A569DFEF767949B6B048CB /* VotingView.swift */,
 			);
-			path = Setup;
+			path = Voting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,26 +501,74 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BF1C0F380FD2C2199ADF04B /* CluesView.swift in Sources */,
+				5642FFB33207E5250A0C5FF4 /* AddPlayerField.swift in Sources */,
+				B21115149F0F12731986D801 /* AllVotesInView.swift in Sources */,
+				CDB91E9EB63123702C552411 /* BallotTurn.swift in Sources */,
+				750F02118992BE47BEA833F9 /* CardBack.swift in Sources */,
+				48CBC63B8782AC2A50117601 /* CardFace+Accessibility.swift in Sources */,
+				B6217704E539D26C0C42068F /* CardFan.swift in Sources */,
+				C941056F86B976B1F12A464B /* CardWord.swift in Sources */,
+				D41CF5078565F2E54FC69C38 /* CluesView.swift in Sources */,
 				31C03D6284BA1D87893A0B35 /* Countdown.swift in Sources */,
-				B33986A5E87576ED5047E26F /* DealView.swift in Sources */,
+				1910FAFB26E88E23E8354ECD /* CrewCard.swift in Sources */,
+				23AD0853AEA7553895669B46 /* DealBar.swift in Sources */,
+				FF8ED9F5A500607B7B3FAF77 /* DealView.swift in Sources */,
+				1EA73F1D2804256DBB90CE9D /* DealtCardFace.swift in Sources */,
+				8AA4D1D6364B4CC21B1B6475 /* DiscussionView.swift in Sources */,
+				7964921488AB6BEE429386FE /* FactGroup.swift in Sources */,
+				34AB071487BDF62D2B057E28 /* GamePhaseView.swift in Sources */,
 				34B8818526DA457980BF689E /* GameStore.swift in Sources */,
 				BA77ED1AF2C8FB4869CA1E60 /* GameView.swift in Sources */,
+				1EAA317259787FED50622C61 /* HoldToRevealCard.swift in Sources */,
 				870E4802384F011C2F4A39B9 /* HomeView.swift in Sources */,
+				6A2268AFF536E4A332E78D63 /* HouseRules+Copy.swift in Sources */,
+				F7007D6F8662F2A36C84A464 /* HouseRulesSection.swift in Sources */,
 				2891FE1DF150B6CFB3D6008C /* HowToPlayView.swift in Sources */,
 				8DBA7955B45C10D1A6DA35C9 /* ImposterApp.swift in Sources */,
+				8C5B82A59E682AAA0E0DB72E /* ImposterCard.swift in Sources */,
+				8CDC59528A501003B62FB9F0 /* ImposterFaceContent.swift in Sources */,
+				E5B38AFE100F728405EDC63B /* ImposterIntelSection.swift in Sources */,
+				FCEC5B386DC711D23D4F01DF /* ImpostersSection.swift in Sources */,
+				EC075461FC4B27E7131098B4 /* IntelOptionRow.swift in Sources */,
+				1B18FDB73522B02BA96A280D /* LastChanceView.swift in Sources */,
+				FAEBDAC1C2626C61F18AAB11 /* Metrics.swift in Sources */,
 				0FBD7077A28C102D5DE673CC /* NavigationBarAppearance.swift in Sources */,
+				342E65B933AFD2ACB06A59BB /* PassThePhoneView.swift in Sources */,
+				1B8E4BF6B4394A80AC31BBAE /* PeekStep.swift in Sources */,
 				D24CF1BF551A6814153FD415 /* PillButtonStyle.swift in Sources */,
+				FC9399189E4125DA1E4E1961 /* PlayerRow.swift in Sources */,
+				7A471D84AC5CA60D831A7D3E /* PlayersContinueBar.swift in Sources */,
 				763E3F01C1D2C94A7ADC978B /* PlayersView.swift in Sources */,
 				6583692A1528DA9EA77F0C77 /* PlayingCard.swift in Sources */,
-				B73BF66D6B86DB43894CBB88 /* RevealView.swift in Sources */,
+				020DDC88A24931835B5A465A /* QuickAccuseView.swift in Sources */,
+				2CCC3A88A6ADA73ACDB4273E /* ResultSummary.swift in Sources */,
+				EF1F23CAC5547719740CD582 /* ResultsView.swift in Sources */,
+				854C4539F63D0ADE5AC3ED6F /* RevealedCards.swift in Sources */,
+				79A5D5E9226B43F126B311BE /* RootView.swift in Sources */,
 				B244147BD3B782D5B955186A /* RosterStore.swift in Sources */,
+				74C0ADA121F4A7EA38F9C1C8 /* RoundFacts.swift in Sources */,
+				22E5EF3AFFDD1756F7B9A928 /* RoundFactsModel.swift in Sources */,
+				61FBCE99F6B9DFBFFCC80EC9 /* RoundsSection.swift in Sources */,
+				AAD338540AEAA645E0C8F282 /* Route.swift in Sources */,
+				F2FA0DBE7723A40DB581CCA1 /* RuleLabel.swift in Sources */,
+				C6D39AF5C455C66F7EBA83B0 /* RuleStep.swift in Sources */,
+				989F0E6529167FC1F9476851 /* RuleStepRow.swift in Sources */,
 				57D6741AB2559268577D7E00 /* RulesStore.swift in Sources */,
-				0534DE6114E87743B9FA493F /* RulesView.swift in Sources */,
-				88F4940098826A571513EC5F /* ScoreboardView.swift in Sources */,
-				C4F75BB9C19713E869645712 /* Theme.swift in Sources */,
-				FB61063C801BD8E5426DB1BE /* VotingView.swift in Sources */,
+				C0C1D7F47A1BD3EF566176E6 /* RulesView.swift in Sources */,
+				EFB189964588181B52CDA5B0 /* ScoreboardView.swift in Sources */,
+				218AB5B31C6C99E63B160F2E /* ScoringKey.swift in Sources */,
+				5FD1CBC7EE635A81BE8A2D11 /* SectionTitle.swift in Sources */,
+				3D89E0B60CF26173F07FD415 /* SelectableChip.swift in Sources */,
+				0ED4EFD47A25E806C4D6D879 /* StandingRow.swift in Sources */,
+				2E38CDCA5758046C3692D170 /* Standings.swift in Sources */,
+				9B05E0FFE2B1DBBD70D657B0 /* SuspectPicker.swift in Sources */,
+				3B6B09E3B611680140687552 /* SuspectRow.swift in Sources */,
+				6D8115C721AC146E67D6AB69 /* TrollFrequency.swift in Sources */,
+				62014EBF0789534567A381A5 /* TurnOrderStrip.swift in Sources */,
+				6D172621E300B455EF2142F0 /* Typeface.swift in Sources */,
+				8DCE9CE12F802F30340C2DF2 /* VotingView.swift in Sources */,
 				64165830C9CAC7576A81D016 /* WordLibrary+Environment.swift in Sources */,
+				4116E84F87032AFA641FA436 /* WordsSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
