@@ -23,6 +23,17 @@ final class RulesStore {
         }
     }
 
+    /// Switches a pack on, for example right after it was created.
+    func include(_ id: WordCategory.ID) {
+        rules.categoryIDs.insert(id)
+    }
+
+    /// Drops categories that no longer exist, for example after a pack is deleted.
+    func prune(to library: WordLibrary) {
+        let pruned = rules.pruned(to: library)
+        if pruned != rules { rules = pruned }
+    }
+
     /// Brings the imposter count into range for the group, for example after someone leaves the table.
     func fit(toPlayers playerCount: Int) {
         let fitted = rules.fitted(toPlayers: playerCount)

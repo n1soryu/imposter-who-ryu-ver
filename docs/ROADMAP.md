@@ -28,7 +28,7 @@ Needs Xcode (free, Mac App Store).
 | 1.6 | Discussion and voting: secret pass-and-vote, or a quick group vote | ✅ |
 | 1.7 | Reveal: the imposter's last-chance word guess and the results screen | ✅ |
 | 1.8 | Scoring and the scoreboard across a session | ✅ |
-| 1.9 | Custom word packs (SwiftData) | ⬜ |
+| 1.9 | Custom word packs (saved as JSON in the bundled category format) | ✅ |
 | 1.10 | Polish: haptics, sound, animations, accessibility, app icon | ⬜ |
 | 1.11 | Install guide: free-provisioning sideload and the weekly refresh | ⬜ |
 

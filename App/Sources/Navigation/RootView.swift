@@ -3,9 +3,11 @@ import SwiftUI
 
 /// The navigation stack from home, through setup, into a game.
 struct RootView: View {
+    var bundledLibrary: WordLibrary
+
     @State private var path: [Route] = []
 
-    @Environment(\.wordLibrary) private var library
+    @Environment(CustomPackStore.self) private var packs
     @Environment(RosterStore.self) private var roster
     @Environment(RulesStore.self) private var rules
     @Environment(GameStore.self) private var game
@@ -16,14 +18,25 @@ struct RootView: View {
                 .navigationDestination(for: Route.self) { route in
                     switch route {
                     case .players: PlayersView(chooseRules: showRules)
-                    case .rules: RulesView(deal: startGame)
+                    case .rules: RulesView(deal: startGame, managePacks: showPacks)
+                    case .packs: PacksView(openPack: showPack)
+                    case .pack(let id): PackEditorView(packID: id)
                     case .game: GameView(leave: returnHome)
                     }
                 }
         }
+        .environment(\.wordLibrary, library)
+        .onChange(of: packs.packs) {
+            rules.prune(to: library)
+        }
         #if DEBUG
         .task(applyDebugScene)
         #endif
+    }
+
+    /// Bundled categories plus the group's own packs.
+    private var library: WordLibrary {
+        bundledLibrary.merging(packs.packs)
     }
 
     private func showPlayers() {
@@ -32,6 +45,14 @@ struct RootView: View {
 
     private func showRules() {
         path.append(.rules)
+    }
+
+    private func showPacks() {
+        path.append(.packs)
+    }
+
+    private func showPack(_ id: WordCategory.ID) {
+        path.append(.pack(id))
     }
 
     private func startGame() {
@@ -47,7 +68,7 @@ struct RootView: View {
     #if DEBUG
     private func applyDebugScene() async {
         guard let scene = DebugScene.requested else { return }
-        path = scene.prepare(roster: roster, rules: rules, game: game, library: library)
+        path = scene.prepare(roster: roster, rules: rules, game: game, packs: packs, library: library)
     }
     #endif
 }

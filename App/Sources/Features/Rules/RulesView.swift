@@ -4,6 +4,7 @@ import SwiftUI
 /// Words, imposters, modes and timers for the next game.
 struct RulesView: View {
     var deal: () -> Void
+    var managePacks: () -> Void
 
     @Environment(RulesStore.self) private var store
     @Environment(RosterStore.self) private var roster
@@ -16,7 +17,7 @@ struct RulesView: View {
         let wordsInPlay = store.rules.availableCardCount(in: library)
 
         Form {
-            WordsSection(rules: $store.rules, library: library, wordsInPlay: wordsInPlay)
+            WordsSection(rules: $store.rules, library: library, wordsInPlay: wordsInPlay, managePacks: managePacks)
             ImpostersSection(settings: $store.rules.settings, playerCount: playerCount)
             ImposterIntelSection(intel: $store.rules.settings.imposterIntel)
             RoundsSection(settings: $store.rules.settings)
@@ -48,10 +49,11 @@ struct RulesView: View {
         try? roster.add(name)
     }
     return NavigationStack {
-        RulesView {}
+        RulesView {} managePacks: {}
     }
     .environment(\.wordLibrary, library)
     .environment(roster)
     .environment(RulesStore(library: library, defaults: defaults))
     .environment(GameStore(defaults: defaults))
+    .environment(CustomPackStore(directory: .temporaryDirectory))
 }

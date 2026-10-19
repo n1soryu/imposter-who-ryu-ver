@@ -16,7 +16,7 @@ xcodebuild -project Imposter.xcodeproj -scheme Imposter -destination "id=$udid" 
     -derivedDataPath .build/DerivedData build | grep -E "error:|BUILD" || true
 xcrun simctl install "$udid" .build/DerivedData/Build/Products/Debug-iphonesimulator/Imposter.app
 
-for scene in home players rules deal clues discussion voting lastChance results scoreboard; do
+for scene in home players rules packs packEditor deal clues discussion voting lastChance results scoreboard; do
     xcrun simctl terminate "$udid" com.n1soryu.imposter 2>/dev/null || true
     if [ "$scene" = home ]; then
         xcrun simctl launch "$udid" com.n1soryu.imposter >/dev/null
