@@ -8,6 +8,8 @@ struct GameView: View {
     @Environment(GameStore.self) private var store
     @State private var isConfirmingEnd = false
     @State private var isQuickVoting = false
+    @State private var isShowingScoreboard = false
+    @Environment(\.wordLibrary) private var library
 
     var body: some View {
         Group {
@@ -73,14 +75,19 @@ struct GameView: View {
             } reveal: {
                 withAnimation(.snappy) { store.perform { $0.finishVoting() } }
             }
-        default:
-            ContentUnavailableView(
-                "The reveal is next",
-                systemImage: "theatermasks",
-                description: Text("The last-chance guess and results arrive in the next build.")
-            )
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.felt)
+        case .lastChance(let accused):
+            if let imposter = session.round.player(accused) {
+                LastChanceView(imposter: imposter) { guess in
+                    withAnimation(.snappy) { store.perform { $0.submitGuess(guess) } }
+                }
+            }
+        case .finished(let result):
+            ResultsView(session: session, result: result) {
+                withAnimation(.snappy) { store.nextRound(library: library) }
+            } showScoreboard: {
+                isShowingScoreboard = true
+            }
+            .id(session.roundNumber)
         }
     }
 }
