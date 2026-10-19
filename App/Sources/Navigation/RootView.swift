@@ -21,6 +21,9 @@ struct RootView: View {
                     }
                 }
         }
+        #if DEBUG
+        .task(applyDebugScene)
+        #endif
     }
 
     private func showPlayers() {
@@ -40,4 +43,11 @@ struct RootView: View {
     private func returnHome() {
         path.removeAll()
     }
+
+    #if DEBUG
+    private func applyDebugScene() async {
+        guard let scene = DebugScene.requested else { return }
+        path = scene.prepare(roster: roster, rules: rules, game: game, library: library)
+    }
+    #endif
 }

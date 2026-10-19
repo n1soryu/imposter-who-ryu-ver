@@ -7,6 +7,10 @@ struct RevealedCards: View {
     var symbol: String
     var isRevealed: Bool
 
+    /// Narrow enough that the two cards barely overlap, so the secret word is never covered.
+    private static let cardWidth: CGFloat = 158
+    private static let spread: CGFloat = 84
+
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
@@ -14,8 +18,9 @@ struct RevealedCards: View {
 
         ZStack {
             CrewCard(word: round.card.word, symbol: symbol)
-                .rotationEffect(.degrees(isRevealed ? -8 : 0))
-                .offset(x: isRevealed ? -62 : 0)
+                .frame(width: Self.cardWidth)
+                .rotationEffect(.degrees(isRevealed ? -6 : 0))
+                .offset(x: isRevealed ? -Self.spread : 0)
             PlayingCard(face: .imposterInk, misprint: .crewInk, cornerMark: "?") {
                 VStack(spacing: 8) {
                     Text(imposterNames.count == 1 ? "Imposter" : "Imposters")
@@ -27,9 +32,10 @@ struct RevealedCards: View {
                 }
                 .foregroundStyle(Color.felt)
             }
-            .rotationEffect(.degrees(isRevealed ? 9 : 0))
+            .frame(width: Self.cardWidth)
+            .rotationEffect(.degrees(isRevealed ? 7 : 0))
             .rotation3DEffect(.degrees(isRevealed || reduceMotion ? 0 : 90), axis: (x: 0, y: 1, z: 0))
-            .offset(x: isRevealed ? 62 : 0, y: isRevealed ? 10 : 0)
+            .offset(x: isRevealed ? Self.spread : 0, y: isRevealed ? 12 : 0)
             .opacity(isRevealed ? 1 : 0)
         }
         .frame(maxWidth: .infinity)

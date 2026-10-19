@@ -39,6 +39,9 @@ struct GameView: View {
         } message: { problem in
             Text(problem)
         }
+        #if DEBUG
+        .onAppear { isShowingScoreboard = DebugScene.requested == .scoreboard }
+        #endif
     }
 
     private var endMessage: String {

@@ -24,6 +24,7 @@ struct ImposterApp: App {
                 .environment(rulesStore)
                 .environment(gameStore)
                 .preferredColorScheme(.dark)
+                .tint(Color.crewInk)
         }
     }
 }

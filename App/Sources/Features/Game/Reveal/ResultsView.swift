@@ -26,7 +26,7 @@ struct ResultsView: View {
                     .padding(.top, 6)
 
                 RevealedCards(round: session.round, symbol: session.categorySymbol, isRevealed: isRevealed)
-                    .frame(height: 280)
+                    .frame(height: 250)
                     .padding(.vertical, 28)
 
                 RoundFacts(round: session.round, result: result)
