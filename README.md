@@ -19,7 +19,7 @@ the imposter, who has to bluff their way through the clues.
    your Personal Team ID. A free Apple ID works.
 3. Pick your iPhone or a simulator and press Run.
 
-After changing `project.yml`, regenerate the project with `xcodegen generate`
+To build from the terminal, run `scripts/build.sh`. It regenerates the project first. After changing `project.yml` or adding files, run `xcodegen generate`
 (`brew install xcodegen`).
 
 ## Tests

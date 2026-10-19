@@ -22,7 +22,7 @@ Needs Xcode (free, Mac App Store).
 |---|---|---|
 | 1.1 | Xcode project (XcodeGen), app shell, design system | ✅ |
 | 1.2 | Players: add, rename, reorder, remember the group | ✅ |
-| 1.3 | Game setup: categories, imposter count, modes, timers, house rules | ⬜ |
+| 1.3 | Game setup: categories, imposter count, modes, timers, house rules | ✅ |
 | 1.4 | Card deal: pass-the-phone privacy screen and hold-to-reveal card | ⬜ |
 | 1.5 | Clue rounds: turn order, per-turn timer, round counter | ⬜ |
 | 1.6 | Discussion and voting: secret pass-and-vote, or a quick group vote | ⬜ |

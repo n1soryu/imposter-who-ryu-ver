@@ -3,10 +3,15 @@ import SwiftUI
 
 @main
 struct ImposterApp: App {
-    private let library = WordLibrary.bundledOrEmpty()
-    @State private var rosterStore = RosterStore()
+    private let library: WordLibrary
+    @State private var rosterStore: RosterStore
+    @State private var rulesStore: RulesStore
 
     init() {
+        let library = WordLibrary.bundledOrEmpty()
+        self.library = library
+        _rosterStore = State(initialValue: RosterStore())
+        _rulesStore = State(initialValue: RulesStore(library: library))
         NavigationBarAppearance.apply()
     }
 
@@ -15,6 +20,7 @@ struct ImposterApp: App {
             RootView()
                 .environment(\.wordLibrary, library)
                 .environment(rosterStore)
+                .environment(rulesStore)
                 .preferredColorScheme(.dark)
         }
     }
@@ -24,6 +30,7 @@ struct ImposterApp: App {
 enum Route: Hashable {
     case players
     case rules
+    case deal
 }
 
 struct RootView: View {
@@ -35,9 +42,23 @@ struct RootView: View {
                 .navigationDestination(for: Route.self) { route in
                     switch route {
                     case .players: PlayersView { path.append(.rules) }
-                    case .rules: RulesView()
+                    case .rules: RulesView { path.append(.deal) }
+                    case .deal: DealPlaceholderView()
                     }
                 }
         }
+    }
+}
+
+/// Placeholder for the card deal, which arrives with roadmap feature 1.4.
+private struct DealPlaceholderView: View {
+    var body: some View {
+        ContentUnavailableView(
+            "Dealing is next",
+            systemImage: "rectangle.portrait.on.rectangle.portrait",
+            description: Text("Passing the phone and revealing cards arrives in the next build.")
+        )
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.felt)
     }
 }

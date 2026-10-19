@@ -12,6 +12,7 @@
 		2891FE1DF150B6CFB3D6008C /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78E1F082FDA2756CDCA6BDF /* HowToPlayView.swift */; };
 		32076E6242725D2C5C0F6954 /* BricolageGrotesque-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C750C898DFE9BE853804FFAF /* BricolageGrotesque-SemiBold.ttf */; };
 		37B5E0475A8EA7F5FEAA194C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A8772D0F48E709895BFE6 /* Assets.xcassets */; };
+		57D6741AB2559268577D7E00 /* RulesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A635F8637CD891F083C306 /* RulesStore.swift */; };
 		64165830C9CAC7576A81D016 /* WordLibrary+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */; };
 		6583692A1528DA9EA77F0C77 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258C7BAC29141036260F567 /* PlayingCard.swift */; };
 		763E3F01C1D2C94A7ADC978B /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF4210F0D9E7F4B0457B1E8 /* PlayersView.swift */; };
@@ -45,6 +46,7 @@
 		D258C7BAC29141036260F567 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 		D553989FC9FC68313D4D1C81 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
 		E3BBE39EF0956CE80C1414B6 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
+		F0A635F8637CD891F083C306 /* RulesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				1B6E1B2AA1EA3EB25ED315DB /* RosterStore.swift */,
+				F0A635F8637CD891F083C306 /* RulesStore.swift */,
 				8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */,
 			);
 			path = Model;
@@ -282,6 +285,7 @@
 				763E3F01C1D2C94A7ADC978B /* PlayersView.swift in Sources */,
 				6583692A1528DA9EA77F0C77 /* PlayingCard.swift in Sources */,
 				B244147BD3B782D5B955186A /* RosterStore.swift in Sources */,
+				57D6741AB2559268577D7E00 /* RulesStore.swift in Sources */,
 				0534DE6114E87743B9FA493F /* RulesView.swift in Sources */,
 				C4F75BB9C19713E869645712 /* Theme.swift in Sources */,
 				64165830C9CAC7576A81D016 /* WordLibrary+Environment.swift in Sources */,
