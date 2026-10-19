@@ -7,6 +7,7 @@ struct GameView: View {
 
     @Environment(GameStore.self) private var store
     @State private var isConfirmingEnd = false
+    @State private var isQuickVoting = false
 
     var body: some View {
         Group {
@@ -58,13 +59,25 @@ struct GameView: View {
             DiscussionView(seconds: session.rules.settings.discussionSeconds) {
                 withAnimation(.snappy) { store.perform { $0.startVoting() } }
             } quickVote: {
-                withAnimation(.snappy) { store.perform { $0.startVoting() } }
+                isQuickVoting = true
+            }
+            .sheet(isPresented: $isQuickVoting) {
+                QuickAccuseView(players: session.round.players) { accused in
+                    withAnimation(.snappy) { store.perform { $0.accuse(accused) } }
+                }
+                .presentationDetents([.large])
+            }
+        case .voting(let tally):
+            VotingView(round: session.round, voter: session.nextVoter, votesCast: tally.ballots.count) { voter, suspect in
+                withAnimation(.snappy) { store.perform { $0.castVote(by: voter, for: suspect) } }
+            } reveal: {
+                withAnimation(.snappy) { store.perform { $0.finishVoting() } }
             }
         default:
             ContentUnavailableView(
-                "Voting is next",
-                systemImage: "hand.raised",
-                description: Text("Voting and results arrive in the next builds.")
+                "The reveal is next",
+                systemImage: "theatermasks",
+                description: Text("The last-chance guess and results arrive in the next build.")
             )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.felt)
