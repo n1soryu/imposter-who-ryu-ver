@@ -33,7 +33,7 @@ project, installed with a free Apple ID rather than through the App Store.
 ## Features
 
 - **3 to 15 players**, with a saved, seat-ordered roster.
-- **442 words in 12 categories**: food, animals, movies, jobs, places, sports, around the
+- **626 words in 12 categories**: food, animals, movies, jobs, places, sports, around the
   house, music, famous people, drinks, video games and countries. Each word has hints and
   decoys, and words don't repeat until you've been through the deck.
 - **Custom word packs** you write yourself, or paste in as a list.

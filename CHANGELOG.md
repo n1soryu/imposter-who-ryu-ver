@@ -10,9 +10,18 @@ All notable changes to this project are recorded here. The format follows
 ### Added
 
 - MIT license.
+- 184 new words, bringing the library to 626 words. Every category now has at least 48.
 
 ### Changed
 
+- Every hint was rewritten. In hint mode the imposter gets one hint at random, and some of
+  them were in-jokes or trivia (Taco → "Tuesday", Seahorse → "Dad"), too vague, or fit
+  another card just as well. Hints now name a well-known feature of the word, and each
+  card has three of them.
+- Mona Lisa, Santa Claus and Mr Bean left Famous People, which now holds only real people.
+  Chess left Sports. DJ is only in Jobs, and Karaoke Bar left Places because Music has Karaoke.
+- Stricter content tests: a hint can't be shared by two cards, be another card's word, or
+  share a word with the answer or its aliases.
 - The Apple Team ID is no longer stored in the Xcode project. It lives only in the
   untracked `Config/Signing.local.xcconfig`.
 
