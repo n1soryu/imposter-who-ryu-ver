@@ -17,6 +17,9 @@ All notable changes to this project are recorded here. The format follows
 
 ### Changed
 
+- The home screen always fits the phone without scrolling. The card fan shrinks to make
+  room, and the home screen's text stops growing at the first accessibility text size.
+- No screen shows a scroll bar. Long lists, like players and house rules, still scroll.
 - Every hint was rewritten. In hint mode the imposter gets one hint at random, and some of
   them were in-jokes or trivia (Taco → "Tuesday", Seahorse → "Dad"), too vague, or fit
   another card just as well. Hints now name a well-known feature of the word, and each

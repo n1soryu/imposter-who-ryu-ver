@@ -30,6 +30,8 @@ struct ImposterApp: App {
                 .environment(soundPlayer)
                 .preferredColorScheme(.dark)
                 .tint(Color.crewInk)
+                // Lists still scroll when they're long, but no screen shows a scroll bar.
+                .scrollIndicators(.hidden)
         }
     }
 }
