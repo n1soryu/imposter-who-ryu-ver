@@ -29,7 +29,7 @@ struct RulesView: View {
         .safeAreaInset(edge: .bottom) {
             DealBar(
                 canDeal: wordsInPlay > 0 && playerCount >= GameSettings.minimumPlayers,
-                problem: wordsInPlay == 0 ? "Pick at least one category and difficulty." : game.problem,
+                problem: wordsInPlay == 0 ? "No words match. Pick more categories or difficulties, or change the word length." : game.problem,
                 deal: deal
             )
         }

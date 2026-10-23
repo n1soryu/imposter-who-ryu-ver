@@ -1,7 +1,7 @@
 import ImposterKit
 import SwiftUI
 
-/// Which categories and difficulties the secret words come from.
+/// Which categories, difficulties and word lengths the secret words come from.
 struct WordsSection: View {
     @Binding var rules: HouseRules
     var library: WordLibrary
@@ -33,6 +33,15 @@ struct WordsSection: View {
                 }
             }
             .padding(.vertical, 4)
+
+            Picker(selection: $rules.wordLength) {
+                ForEach(HouseRules.WordLength.allCases, id: \.self) { length in
+                    Text(length.title).tag(length)
+                }
+            } label: {
+                RuleLabel("Word length", detail: "One word like Pizza, or two or more like Ice Cream.")
+            }
+            .tint(Color.crewInk)
 
             Button(action: managePacks) {
                 HStack {

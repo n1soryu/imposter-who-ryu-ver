@@ -28,6 +28,11 @@ public struct WordCard: Hashable, Codable, Sendable {
         self.difficulty = difficulty
     }
 
+    /// How many words the secret word has. Hyphens split words, so "Spider-Man" counts as two.
+    public var wordCount: Int {
+        word.split(whereSeparator: { $0.isWhitespace || $0 == "-" }).count
+    }
+
     private enum CodingKeys: String, CodingKey {
         case word, hints, decoys, aliases, difficulty
     }

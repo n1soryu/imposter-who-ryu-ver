@@ -10,6 +10,9 @@ All notable changes to this project are recorded here. The format follows
 ### Added
 
 - MIT license.
+- **Word length** house rule: play only one-word secret words ("Pizza"), only words of two
+  or more ("Ice Cream", "Back to the Future"), or any. Hyphenated words like "Spider-Man"
+  count as two. Saved rules from older versions load with "Any".
 - 184 new words, bringing the library to 626 words. Every category now has at least 48.
 
 ### Changed

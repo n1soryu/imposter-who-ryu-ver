@@ -10,6 +10,16 @@ extension WordCard.Difficulty {
     }
 }
 
+extension HouseRules.WordLength {
+    var title: String {
+        switch self {
+        case .any: "Any"
+        case .oneWord: "One word"
+        case .multipleWords: "Two or more"
+        }
+    }
+}
+
 extension GameSettings.ImposterIntel {
     var title: String {
         switch self {

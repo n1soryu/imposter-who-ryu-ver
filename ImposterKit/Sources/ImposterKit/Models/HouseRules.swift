@@ -1,17 +1,49 @@
 /// Everything chosen on the house rules screen: the game settings plus which words are in play.
 public struct HouseRules: Hashable, Codable, Sendable {
+    /// Whether the secret word is a single word, like "Pizza", or several, like "Ice Cream".
+    public enum WordLength: String, Hashable, Codable, Sendable, CaseIterable {
+        case any
+        case oneWord
+        /// Two or more words. Longer titles such as "Back to the Future" count here too.
+        case multipleWords
+
+        public func allows(_ card: WordCard) -> Bool {
+            switch self {
+            case .any: true
+            case .oneWord: card.wordCount == 1
+            case .multipleWords: card.wordCount > 1
+            }
+        }
+    }
+
     public var settings: GameSettings
     public var categoryIDs: Set<WordCategory.ID>
     public var difficulties: Set<WordCard.Difficulty>
+    public var wordLength: WordLength
 
     public init(
         settings: GameSettings = GameSettings(),
         categoryIDs: Set<WordCategory.ID>,
-        difficulties: Set<WordCard.Difficulty> = Set(WordCard.Difficulty.allCases)
+        difficulties: Set<WordCard.Difficulty> = Set(WordCard.Difficulty.allCases),
+        wordLength: WordLength = .any
     ) {
         self.settings = settings
         self.categoryIDs = categoryIDs
         self.difficulties = difficulties
+        self.wordLength = wordLength
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case settings, categoryIDs, difficulties, wordLength
+    }
+
+    // Rules saved before `wordLength` existed still load.
+    public init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        settings = try container.decode(GameSettings.self, forKey: .settings)
+        categoryIDs = try container.decode(Set<WordCategory.ID>.self, forKey: .categoryIDs)
+        difficulties = try container.decode(Set<WordCard.Difficulty>.self, forKey: .difficulties)
+        wordLength = try container.decodeIfPresent(WordLength.self, forKey: .wordLength) ?? .any
     }
 
     /// Default rules with every category in the library switched on.
@@ -24,10 +56,15 @@ public struct HouseRules: Hashable, Codable, Sendable {
         library.categories(withIDs: categoryIDs)
     }
 
-    /// How many words match the chosen categories and difficulties.
+    /// Whether the card's difficulty and length are allowed. Category is checked separately.
+    public func allows(_ card: WordCard) -> Bool {
+        difficulties.contains(card.difficulty) && wordLength.allows(card)
+    }
+
+    /// How many words match the chosen categories, difficulties and word length.
     public func availableCardCount(in library: WordLibrary) -> Int {
         categories(in: library).reduce(0) { total, category in
-            total + category.cards.filter { difficulties.contains($0.difficulty) }.count
+            total + category.cards.filter(allows).count
         }
     }
 

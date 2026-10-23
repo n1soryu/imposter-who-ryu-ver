@@ -1,7 +1,7 @@
 /// Why a game couldn't start or move to the next round.
 public enum GameError: Error, Hashable, Sendable {
     case deal(DealError)
-    /// No words match the chosen categories and difficulties.
+    /// No words match the chosen categories, difficulties and word length.
     case noWords
 }
 
@@ -191,7 +191,7 @@ public struct GameSession: Hashable, Sendable {
         picker: inout WordPicker,
         using generator: inout some RandomNumberGenerator
     ) throws(GameError) -> (Round, symbol: String) {
-        guard let draw = picker.draw(from: rules.categories(in: library), difficulties: rules.difficulties, using: &generator) else {
+        guard let draw = picker.draw(from: rules.categories(in: library), where: rules.allows, using: &generator) else {
             throw .noWords
         }
         do {

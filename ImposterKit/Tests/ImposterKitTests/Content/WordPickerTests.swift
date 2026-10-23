@@ -46,7 +46,7 @@ struct WordPickerTests {
 
         var words: [String] = []
         for _ in 0..<6 {
-            let draw = picker.draw(from: [Self.fruit, Self.pets], difficulties: [.easy], using: &generator)
+            let draw = picker.draw(from: [Self.fruit, Self.pets], where: { $0.difficulty == .easy }, using: &generator)
             words.append(try #require(draw).card.word)
         }
 
@@ -56,13 +56,13 @@ struct WordPickerTests {
     @Test func refreshingOneFilterKeepsHistoryForOtherWords() throws {
         var picker = WordPicker()
         var generator = SeededGenerator(seed: 5)
-        let hardDraw = picker.draw(from: [Self.fruit], difficulties: [.hard], using: &generator)
+        let hardDraw = picker.draw(from: [Self.fruit], where: { $0.difficulty == .hard }, using: &generator)
         let hard = try #require(hardDraw)
         #expect(hard.card.word == "Durian")
 
         // Use up the easy fruit and start one more easy cycle; Durian must stay marked as used.
         for _ in 0..<3 {
-            _ = picker.draw(from: [Self.fruit], difficulties: [.easy], using: &generator)
+            _ = picker.draw(from: [Self.fruit], where: { $0.difficulty == .easy }, using: &generator)
         }
 
         #expect(picker.isUsed(hard.card, in: "fruit"))
@@ -70,7 +70,7 @@ struct WordPickerTests {
 
     @Test func returnsNothingWhenNoCardsQualify() {
         var picker = WordPicker()
-        #expect(picker.draw(from: [Self.pets], difficulties: [.hard]) == nil)
+        #expect(picker.draw(from: [Self.pets], where: { $0.difficulty == .hard }) == nil)
         #expect(picker.draw(from: []) == nil)
     }
 

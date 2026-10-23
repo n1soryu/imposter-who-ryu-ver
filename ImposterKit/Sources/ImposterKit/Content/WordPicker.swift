@@ -18,22 +18,23 @@ public struct WordPicker: Hashable, Codable, Sendable {
     }
 
     /// Draws a card from the given categories, choosing the category first so small categories come up as often as big ones.
-    /// - Returns: `nil` when the categories hold no cards at the allowed difficulties.
+    /// - Parameter isEligible: Which cards may be drawn, such as `HouseRules.allows(_:)`.
+    /// - Returns: `nil` when the categories hold no eligible cards.
     public mutating func draw(
         from categories: [WordCategory],
-        difficulties: Set<WordCard.Difficulty> = Set(WordCard.Difficulty.allCases)
+        where isEligible: (WordCard) -> Bool = { _ in true }
     ) -> WordDraw? {
         var generator = SystemRandomNumberGenerator()
-        return draw(from: categories, difficulties: difficulties, using: &generator)
+        return draw(from: categories, where: isEligible, using: &generator)
     }
 
     public mutating func draw(
         from categories: [WordCategory],
-        difficulties: Set<WordCard.Difficulty> = Set(WordCard.Difficulty.allCases),
+        where isEligible: (WordCard) -> Bool = { _ in true },
         using generator: inout some RandomNumberGenerator
     ) -> WordDraw? {
         let eligible = categories.map { category in
-            (category, category.cards.filter { difficulties.contains($0.difficulty) })
+            (category, category.cards.filter(isEligible))
         }
         guard eligible.contains(where: { $0.1.isEmpty == false }) else { return nil }
 

@@ -43,7 +43,8 @@ project, installed with a free Apple ID rather than through the App Store.
   - **Multiple imposters**, always fewer than the crew.
   - **Troll rounds:** a chance that everyone is secretly the imposter.
   - Clue rounds per game, turn and discussion timers, and whether an imposter may go first.
-  - Categories and difficulty (easy, medium, hard).
+  - Categories, difficulty (easy, medium, hard), and word length (one word like "Pizza", or
+    two or more like "Ice Cream").
 - **Game-night scoreboard** that tracks points across rounds.
 - **Made for a dark room:** every card looks the same from across the table, so a glance never
   gives a role away. Haptics, synthesized sound effects (with an off switch) and support for

@@ -75,7 +75,7 @@ extension GameError {
     var message: String {
         switch self {
         case .noWords:
-            "No words match these house rules. Turn on more categories or difficulties."
+            "No words match these house rules. Turn on more categories or difficulties, or change the word length."
         case .deal(.notEnoughPlayers(let minimum)):
             "You need at least \(minimum) players."
         case .deal(.duplicatePlayers):
