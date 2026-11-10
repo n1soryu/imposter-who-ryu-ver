@@ -84,3 +84,15 @@ phone's browser with nothing installed.
 | "Developer Mode disabled" | See step 4. |
 | The app opens then closes straight away | The 7 days are up. Re-install. |
 | Build fails with a signing error | Open the project in Xcode. The Signing & Capabilities tab explains what's missing. |
+
+## Without a Mac: the release IPA
+
+Each [GitHub release](https://github.com/n1soryu/imposter-who-ryu-ver/releases) has an
+`Imposter-<version>.ipa`. It is **unsigned** on purpose, so it carries nobody's Apple ID or
+device list. It won't open until you sign it with your own free Apple ID, using
+[AltStore](https://altstore.io), [SideStore](https://sidestore.io) or
+[Sideloadly](https://sideloadly.io). The same 7-day limit applies: re-sign it weekly (AltStore
+and SideStore can do this in the background).
+
+Maintainers build it with `scripts/make-ipa.sh`, then attach `.build/ipa/Imposter-<version>.ipa`
+to the release.

@@ -7,9 +7,13 @@ All notable changes to this project are recorded here. The format follows
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-10
+
 ### Added
 
 - MIT license.
+- An unsigned `Imposter-<version>.ipa` attached to each GitHub release, for installing with
+  AltStore, SideStore or Sideloadly, plus `scripts/make-ipa.sh` to build it.
 - **Word length** house rule: play only one-word secret words ("Pizza"), only words of two
   or more ("Ice Cream", "Back to the Future"), or any. Hyphenated words like "Spider-Man"
   count as two. Saved rules from older versions load with "Any".
@@ -30,6 +34,7 @@ All notable changes to this project are recorded here. The format follows
   share a word with the answer or its aliases.
 - The Apple Team ID is no longer stored in the Xcode project. It lives only in the
   untracked `Config/Signing.local.xcconfig`.
+- The app version is now 0.2.0 (build 2).
 
 ## [0.1.0] - 2026-10-20
 
@@ -70,5 +75,6 @@ and 1).
 
 - Reveal screen layout, long words wrapping on cards, and the keyboard covering text fields.
 
-[Unreleased]: https://github.com/n1soryu/imposter-who-ryu-ver/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/n1soryu/imposter-who-ryu-ver/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/n1soryu/imposter-who-ryu-ver/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/n1soryu/imposter-who-ryu-ver/releases/tag/v0.1.0

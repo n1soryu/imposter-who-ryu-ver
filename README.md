@@ -13,7 +13,7 @@
   <img alt="iOS 17+" src="https://img.shields.io/badge/iOS-17%2B-1E1A3C">
   <img alt="Swift 6" src="https://img.shields.io/badge/Swift-6-FF3D7F">
   <img alt="SwiftUI" src="https://img.shields.io/badge/UI-SwiftUI-FFD23F">
-  <img alt="Version 0.1.0" src="https://img.shields.io/badge/version-0.1.0-8F8BB8">
+  <img alt="Version 0.2.0" src="https://img.shields.io/badge/version-0.2.0-8F8BB8">
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-F3F4FF"></a>
 </p>
 
@@ -61,6 +61,9 @@ scripts/setup-signing.sh        # once: picks up your free Personal Team
 scripts/install-on-iphone.sh    # every 7 days, when the app stops opening
 ```
 
+No Mac? Each [release](https://github.com/n1soryu/imposter-who-ryu-ver/releases) has an unsigned
+IPA you can sign with AltStore, SideStore or Sideloadly (see [docs/INSTALL.md](docs/INSTALL.md)).
+
 Apps signed with a free Apple ID expire after 7 days. Re-installing takes about a minute and
 keeps your players, house rules and word packs.
 
@@ -91,6 +94,7 @@ scripts/build.sh simulator
 | `scripts/build.sh` | Regenerates the project from `project.yml` and builds the app. |
 | `scripts/setup-signing.sh` | Writes your free Apple ID team into `Config/Signing.local.xcconfig`. |
 | `scripts/install-on-iphone.sh` | Builds and installs the app on a connected iPhone. |
+| `scripts/make-ipa.sh` | Builds the unsigned IPA that gets attached to a GitHub release. |
 | `scripts/screenshots.sh <udid>` | Screenshots every screen on a simulator using debug scenes. |
 | `scripts/render-icon.swift` | Redraws the app icon. |
 | `scripts/render-sounds.swift` | Re-synthesizes the sound effects. |
