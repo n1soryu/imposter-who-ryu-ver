@@ -10,10 +10,14 @@
 		020DDC88A24931835B5A465A /* QuickAccuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870146634EACEF42751C20CB /* QuickAccuseView.swift */; };
 		068CF1293B9EF5F3EB49BEE6 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3073CBBA15A53B2929B97F /* SoundPlayer.swift */; };
 		070761E3D7B2FEBA8BFE10CD /* SoundToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC4DC27C97C59004E6F182 /* SoundToggleButton.swift */; };
+		0807620C795722D39DAE27C9 /* ConnectionDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5BB389368FE1BAC196C24 /* ConnectionDot.swift */; };
 		0ED4EFD47A25E806C4D6D879 /* StandingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3170B0AEFBEE289CFB0D51 /* StandingRow.swift */; };
+		0EF99F30278A7511A9DE6BE0 /* PeekSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6733F6825CA79FE288DD707F /* PeekSheet.swift */; };
 		0F564629F228AD8221F61E20 /* times-up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3B47511DAC0C8AB851E36EA3 /* times-up.wav */; };
 		0FBD7077A28C102D5DE673CC /* NavigationBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C428E940269C0847733A5 /* NavigationBarAppearance.swift */; };
+		102BACD886920955D2BC5DCB /* ImposterHost in Frameworks */ = {isa = PBXBuildFile; productRef = BE421AB67BDA1E8C30646F9F /* ImposterHost */; };
 		13D4FE537346ED3A5C139CFC /* CustomPackStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441FB3C908C2649AEC556832 /* CustomPackStore.swift */; };
+		16CB2EF4DA2A2E69ED08E7D2 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32914BB09CF2490AC066A31B /* QRCodeView.swift */; };
 		1910FAFB26E88E23E8354ECD /* CrewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F52E3AC31FBCED843FB90D /* CrewCard.swift */; };
 		1AF26761B52BF9F0509FD725 /* PackWordsFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34396DF4790B15D5CA0812F7 /* PackWordsFooter.swift */; };
 		1B18FDB73522B02BA96A280D /* LastChanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C270EA42F593F9065ADDCE /* LastChanceView.swift */; };
@@ -27,6 +31,8 @@
 		2891FE1DF150B6CFB3D6008C /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78E1F082FDA2756CDCA6BDF /* HowToPlayView.swift */; };
 		2CCC3A88A6ADA73ACDB4273E /* ResultSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9DF0225926CE7A977286C /* ResultSummary.swift */; };
 		2E38CDCA5758046C3692D170 /* Standings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DD125AC068A6110F34BD93 /* Standings.swift */; };
+		2EDF90688F7184C46A0B70B1 /* WordHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B843A3ACA87AF3B5581385C /* WordHistory.swift */; };
+		2FC448575EF42D316D4DBCAE /* HostLobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E26C70D3AADF7722A0B5800 /* HostLobbyView.swift */; };
 		31C03D6284BA1D87893A0B35 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C43622BE7EB9B6F1381B1F5 /* Countdown.swift */; };
 		32076E6242725D2C5C0F6954 /* BricolageGrotesque-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C750C898DFE9BE853804FFAF /* BricolageGrotesque-SemiBold.ttf */; };
 		33746ED4756D43D4B6D8CE89 /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C8358CFEAEC3F0D2039587 /* SoundEffect.swift */; };
@@ -36,17 +42,23 @@
 		37B5E0475A8EA7F5FEAA194C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A8772D0F48E709895BFE6 /* Assets.xcassets */; };
 		3B6B09E3B611680140687552 /* SuspectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4174B017D70C3DE1CC57181 /* SuspectRow.swift */; };
 		3D89E0B60CF26173F07FD415 /* SelectableChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429BD2113A9FF3EB999E84DD /* SelectableChip.swift */; };
+		3EB3F6D443D1B66DE4A285A6 /* HostVotingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC9791869C0E3E6E7CB24D /* HostVotingView.swift */; };
+		3EC7BBC5BA37EE473D2CE630 /* HostJoinInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B86EBDB13E1FDEE442A7A76 /* HostJoinInfo.swift */; };
 		4116E84F87032AFA641FA436 /* WordsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91798ACDD3B98C9C0AEA2C9 /* WordsSection.swift */; };
+		4437370E5097ABF16FB0AD0E /* HostGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FD3BF505FADD42B7971CE /* HostGameView.swift */; };
 		48CBC63B8782AC2A50117601 /* CardFace+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A775927168869E943EE3AB /* CardFace+Accessibility.swift */; };
 		4B82C63442FC0261E5F461CD /* PackEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613F15AD439A1B6BB8F60D1F /* PackEditorView.swift */; };
 		5642FFB33207E5250A0C5FF4 /* AddPlayerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA8E4968526EB4267CBEBF /* AddPlayerField.swift */; };
 		57D6741AB2559268577D7E00 /* RulesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A635F8637CD891F083C306 /* RulesStore.swift */; };
 		5FD1CBC7EE635A81BE8A2D11 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37558849CCC98E0E5C7B5092 /* SectionTitle.swift */; };
+		6140764FEC24C9D75DA23541 /* HostCluesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEEBE1D8E6DD94E5C82ADF0 /* HostCluesView.swift */; };
+		61EAAC859B954F3A42E5108E /* HostPlayersSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCB1AECA02A4F695A7B4EC2 /* HostPlayersSheet.swift */; };
 		61FBCE99F6B9DFBFFCC80EC9 /* RoundsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45323AAD7928B8B9027A9349 /* RoundsSection.swift */; };
 		62014EBF0789534567A381A5 /* TurnOrderStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37068E57905CC51C728554F9 /* TurnOrderStrip.swift */; };
 		64165830C9CAC7576A81D016 /* WordLibrary+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */; };
 		6583692A1528DA9EA77F0C77 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258C7BAC29141036260F567 /* PlayingCard.swift */; };
 		6A2268AFF536E4A332E78D63 /* HouseRules+Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33002CFB5AEDBAF34C285500 /* HouseRules+Copy.swift */; };
+		6B3CD53C5120128A763A0622 /* HostNameStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC1F822DFD74D8B2D56081 /* HostNameStep.swift */; };
 		6D172621E300B455EF2142F0 /* Typeface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A0589D1B3EB8E2CC3BF0A /* Typeface.swift */; };
 		6D8115C721AC146E67D6AB69 /* TrollFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26B39DCFCA0057CBC763B9 /* TrollFrequency.swift */; };
 		74C0ADA121F4A7EA38F9C1C8 /* RoundFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EC521B71B262FEBD7F9DA /* RoundFacts.swift */; };
@@ -57,6 +69,7 @@
 		7A471D84AC5CA60D831A7D3E /* PlayersContinueBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A127333C6C32A147965739BE /* PlayersContinueBar.swift */; };
 		7DE8DD172D27C48E60368F76 /* BricolageGrotesque-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0945B377831E58C5390DBE12 /* BricolageGrotesque-ExtraBold.ttf */; };
 		7E0CB7B2B1F614230C0B2D70 /* PasteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773AC4933AC9FE2C1A23AB5C /* PasteListView.swift */; };
+		8311A4750A8367052E88EBEF /* HostLobbyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FBCE89F7BDA69F971E255F /* HostLobbyContent.swift */; };
 		84640DA911F475C0123C8BC9 /* PackDetailsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45525BF787B74FCF4AA73FA8 /* PackDetailsSection.swift */; };
 		854C4539F63D0ADE5AC3ED6F /* RevealedCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207102FF3E9FEE4FA10D9791 /* RevealedCards.swift */; };
 		870E4802384F011C2F4A39B9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471A78966DA6BA963C93325F /* HomeView.swift */; };
@@ -65,7 +78,10 @@
 		8CDC59528A501003B62FB9F0 /* ImposterFaceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4689B4372BD939CE5768A2D5 /* ImposterFaceContent.swift */; };
 		8DBA7955B45C10D1A6DA35C9 /* ImposterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194304FB5A786982E7C05EF2 /* ImposterApp.swift */; };
 		8DCE9CE12F802F30340C2DF2 /* VotingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A569DFEF767949B6B048CB /* VotingView.swift */; };
+		8ED21DDC16BCE5ACCD6F6A7A /* HostLastChanceWaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636246C09030D158E111488 /* HostLastChanceWaitView.swift */; };
+		97217876704405C4A58A11A9 /* JoinLinkSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298EEF7ED65E61272B01E51B /* JoinLinkSheet.swift */; };
 		989F0E6529167FC1F9476851 /* RuleStepRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0073C93DE538A015CB920EB3 /* RuleStepRow.swift */; };
+		991EE7972C5247C9A08EAC50 /* HostPlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B1F9FDD136794FB8F33B3 /* HostPlayerRow.swift */; };
 		9B05E0FFE2B1DBBD70D657B0 /* SuspectPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31ADD705B2353112993BC67 /* SuspectPicker.swift */; };
 		9CC8DB727745C95D9C068E71 /* PackRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE6466D0ADCB4E04A06A49 /* PackRow.swift */; };
 		A6F25A4E853C95753E964193 /* PackWordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472526246CF0BCEE0C759329 /* PackWordRow.swift */; };
@@ -77,6 +93,7 @@
 		BA77ED1AF2C8FB4869CA1E60 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5594FC6051CCF05A43474CB /* GameView.swift */; };
 		BAA6857CAEEF805F260FD594 /* imposters-win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83757793DCF7B2395FC548EA /* imposters-win.wav */; };
 		BB35A48681884DCC715B7BB6 /* crew-wins.wav in Resources */ = {isa = PBXBuildFile; fileRef = D19CE217D81D3CA95A80085B /* crew-wins.wav */; };
+		BD61CF91B574143667891B4F /* HostDealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A41FF40B134E2BEE90455A /* HostDealView.swift */; };
 		C0C1D7F47A1BD3EF566176E6 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3F6C9642E928DE943FCDD /* RulesView.swift */; };
 		C6D39AF5C455C66F7EBA83B0 /* RuleStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0AD7329A2126818BE40460 /* RuleStep.swift */; };
 		C941056F86B976B1F12A464B /* CardWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1737631D2761EFEE9DE72E /* CardWord.swift */; };
@@ -85,8 +102,12 @@
 		CEAD8B435E290DC951F01BC9 /* AdaptiveScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17781689625469AAA0891DBE /* AdaptiveScrollView.swift */; };
 		D24CF1BF551A6814153FD415 /* PillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343163C16639E26888F904F /* PillButtonStyle.swift */; };
 		D41CF5078565F2E54FC69C38 /* CluesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEFD7BC405FD65E87A3F8E7 /* CluesView.swift */; };
+		DA4163386DAB68D9C63CA60F /* HostStatusList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30166FECEACBC65FBDB1E877 /* HostStatusList.swift */; };
 		DA5A2B90E02C950C7DD31A76 /* AddWordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C3D0353CD9AC39EEDD191 /* AddWordField.swift */; };
 		E5B38AFE100F728405EDC63B /* ImposterIntelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B15B8D936AB3B6619D0865 /* ImposterIntelSection.swift */; };
+		E61CFC89B8A8E98A23B281AE /* PlayerView+Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D536467C23524D4F3D4D961 /* PlayerView+Host.swift */; };
+		E9D019FF157D2C1A149FCD3F /* HostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127A0C1129C2C5C38216EB32 /* HostStore.swift */; };
+		EAA05B3651A8309B8E8322F4 /* HostPhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4A1A71859A3CCC425B3AE /* HostPhaseView.swift */; };
 		EB8EDE5DD86429AF80B0ADF0 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7B63816FC2DE7F6BE042558E /* OFL.txt */; };
 		EC075461FC4B27E7131098B4 /* IntelOptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFA3A1A043609DB52A283F /* IntelOptionRow.swift */; };
 		EDF9963C8A71F6767E6B67A8 /* DebugScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B49308E958E18ACDE36E9 /* DebugScene.swift */; };
@@ -99,27 +120,36 @@
 		FC9399189E4125DA1E4E1961 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AC0A6807264988E7A7CFA /* PlayerRow.swift */; };
 		FCEC5B386DC711D23D4F01DF /* ImpostersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F08BEF873275AC87758D7 /* ImpostersSection.swift */; };
 		FF8ED9F5A500607B7B3FAF77 /* DealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE591611E387D04AF03EED93 /* DealView.swift */; };
+		FF8F5E36228813D3B0195312 /* HostRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485FDD2E342888440BE19F92 /* HostRulesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0073C93DE538A015CB920EB3 /* RuleStepRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleStepRow.swift; sourceTree = "<group>"; };
 		0090F71B2804AFB093E029A9 /* PeekStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekStep.swift; sourceTree = "<group>"; };
+		02FBCE89F7BDA69F971E255F /* HostLobbyContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostLobbyContent.swift; sourceTree = "<group>"; };
 		0933D8807FC5F463D12A49AE /* AllVotesInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllVotesInView.swift; sourceTree = "<group>"; };
 		0945B377831E58C5390DBE12 /* BricolageGrotesque-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BricolageGrotesque-ExtraBold.ttf"; sourceTree = "<group>"; };
 		0B3A8772D0F48E709895BFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C43622BE7EB9B6F1381B1F5 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
+		127A0C1129C2C5C38216EB32 /* HostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostStore.swift; sourceTree = "<group>"; };
 		141A6ECD322E8089538AB7D0 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		17781689625469AAA0891DBE /* AdaptiveScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveScrollView.swift; sourceTree = "<group>"; };
 		194304FB5A786982E7C05EF2 /* ImposterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImposterApp.swift; sourceTree = "<group>"; };
 		1B6E1B2AA1EA3EB25ED315DB /* RosterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterStore.swift; sourceTree = "<group>"; };
 		1C26B39DCFCA0057CBC763B9 /* TrollFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrollFrequency.swift; sourceTree = "<group>"; };
 		207102FF3E9FEE4FA10D9791 /* RevealedCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealedCards.swift; sourceTree = "<group>"; };
+		22A41FF40B134E2BEE90455A /* HostDealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostDealView.swift; sourceTree = "<group>"; };
+		298EEF7ED65E61272B01E51B /* JoinLinkSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinLinkSheet.swift; sourceTree = "<group>"; };
+		30166FECEACBC65FBDB1E877 /* HostStatusList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostStatusList.swift; sourceTree = "<group>"; };
 		309F08BEF873275AC87758D7 /* ImpostersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostersSection.swift; sourceTree = "<group>"; };
+		32914BB09CF2490AC066A31B /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		33002CFB5AEDBAF34C285500 /* HouseRules+Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HouseRules+Copy.swift"; sourceTree = "<group>"; };
 		34396DF4790B15D5CA0812F7 /* PackWordsFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackWordsFooter.swift; sourceTree = "<group>"; };
+		364FD3BF505FADD42B7971CE /* HostGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostGameView.swift; sourceTree = "<group>"; };
 		37068E57905CC51C728554F9 /* TurnOrderStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnOrderStrip.swift; sourceTree = "<group>"; };
 		37558849CCC98E0E5C7B5092 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 		37D1135955C49A29A77DC058 /* DealBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealBar.swift; sourceTree = "<group>"; };
+		39E5BB389368FE1BAC196C24 /* ConnectionDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionDot.swift; sourceTree = "<group>"; };
 		3B47511DAC0C8AB851E36EA3 /* times-up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "times-up.wav"; sourceTree = "<group>"; };
 		3FAA8E4968526EB4267CBEBF /* AddPlayerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerField.swift; sourceTree = "<group>"; };
 		42448B07B17285C474A15E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -131,30 +161,40 @@
 		4689B4372BD939CE5768A2D5 /* ImposterFaceContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImposterFaceContent.swift; sourceTree = "<group>"; };
 		471A78966DA6BA963C93325F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		472526246CF0BCEE0C759329 /* PackWordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackWordRow.swift; sourceTree = "<group>"; };
+		485FDD2E342888440BE19F92 /* HostRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostRulesView.swift; sourceTree = "<group>"; };
 		4B58FF046DB4464C11204173 /* HouseRulesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRulesSection.swift; sourceTree = "<group>"; };
 		5343163C16639E26888F904F /* PillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButtonStyle.swift; sourceTree = "<group>"; };
 		568AC0A6807264988E7A7CFA /* PlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
+		5A1B1F9FDD136794FB8F33B3 /* HostPlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostPlayerRow.swift; sourceTree = "<group>"; };
 		5DF4210F0D9E7F4B0457B1E8 /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
 		5FF6F37F69463F7988D7088F /* CardFan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFan.swift; sourceTree = "<group>"; };
 		613F15AD439A1B6BB8F60D1F /* PackEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackEditorView.swift; sourceTree = "<group>"; };
 		65A775927168869E943EE3AB /* CardFace+Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardFace+Accessibility.swift"; sourceTree = "<group>"; };
+		66DC9791869C0E3E6E7CB24D /* HostVotingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostVotingView.swift; sourceTree = "<group>"; };
+		6733F6825CA79FE288DD707F /* PeekSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekSheet.swift; sourceTree = "<group>"; };
 		68C270EA42F593F9065ADDCE /* LastChanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastChanceView.swift; sourceTree = "<group>"; };
+		6B843A3ACA87AF3B5581385C /* WordHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordHistory.swift; sourceTree = "<group>"; };
+		6B86EBDB13E1FDEE442A7A76 /* HostJoinInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostJoinInfo.swift; sourceTree = "<group>"; };
+		73E4A1A71859A3CCC425B3AE /* HostPhaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostPhaseView.swift; sourceTree = "<group>"; };
 		75C8358CFEAEC3F0D2039587 /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
 		773AC4933AC9FE2C1A23AB5C /* PasteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteListView.swift; sourceTree = "<group>"; };
 		79BFA3A1A043609DB52A283F /* IntelOptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelOptionRow.swift; sourceTree = "<group>"; };
 		7B63816FC2DE7F6BE042558E /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		7C9C428E940269C0847733A5 /* NavigationBarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearance.swift; sourceTree = "<group>"; };
+		7EEEBE1D8E6DD94E5C82ADF0 /* HostCluesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostCluesView.swift; sourceTree = "<group>"; };
 		82B5EAAEE9B9F91D2683C8B8 /* ImposterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImposterCard.swift; sourceTree = "<group>"; };
 		83757793DCF7B2395FC548EA /* imposters-win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "imposters-win.wav"; sourceTree = "<group>"; };
 		86EF8BCFC77244B27EFB085A /* WordEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEditorView.swift; sourceTree = "<group>"; };
 		870146634EACEF42751C20CB /* QuickAccuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAccuseView.swift; sourceTree = "<group>"; };
 		8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordLibrary+Environment.swift"; sourceTree = "<group>"; };
 		8D1737631D2761EFEE9DE72E /* CardWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWord.swift; sourceTree = "<group>"; };
+		8D536467C23524D4F3D4D961 /* PlayerView+Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerView+Host.swift"; sourceTree = "<group>"; };
 		8F3170B0AEFBEE289CFB0D51 /* StandingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingRow.swift; sourceTree = "<group>"; };
 		92F52E3AC31FBCED843FB90D /* CrewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewCard.swift; sourceTree = "<group>"; };
 		95E847922BDB78BE17ED8835 /* DiscussionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionView.swift; sourceTree = "<group>"; };
 		986A2F5E01E4B095640D509F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		9B3073CBBA15A53B2929B97F /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		9E26C70D3AADF7722A0B5800 /* HostLobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostLobbyView.swift; sourceTree = "<group>"; };
 		A0A569DFEF767949B6B048CB /* VotingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingView.swift; sourceTree = "<group>"; };
 		A127333C6C32A147965739BE /* PlayersContinueBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersContinueBar.swift; sourceTree = "<group>"; };
 		A3B6B259016BEAEE483AFF1A /* ScoringKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringKey.swift; sourceTree = "<group>"; };
@@ -162,11 +202,12 @@
 		A61B3E05ABB05263FA866CBF /* RuleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleLabel.swift; sourceTree = "<group>"; };
 		A8B15B8D936AB3B6619D0865 /* ImposterIntelSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImposterIntelSection.swift; sourceTree = "<group>"; };
 		ADE3F6C9642E928DE943FCDD /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		AFCB1AECA02A4F695A7B4EC2 /* HostPlayersSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostPlayersSheet.swift; sourceTree = "<group>"; };
 		B34453D10B7D0290E08EE20A /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
 		B6DD125AC068A6110F34BD93 /* Standings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standings.swift; sourceTree = "<group>"; };
-		B702912E8123390C8646D6D5 /* ImposterKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ImposterKit; sourceTree = SOURCE_ROOT; };
+		B702912E8123390C8646D6D5 /* ImposterKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ImposterKit; path = ImposterKit; sourceTree = SOURCE_ROOT; };
 		B77298EA93B4615018A9BF0B /* DealtCardFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealtCardFace.swift; sourceTree = "<group>"; };
-		BDDE29818A37A7B8D0093E4A /* Imposter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imposter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDE29818A37A7B8D0093E4A /* Imposter.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Imposter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE591611E387D04AF03EED93 /* DealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealView.swift; sourceTree = "<group>"; };
 		C0F9DF0225926CE7A977286C /* ResultSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSummary.swift; sourceTree = "<group>"; };
 		C25F822681E96A857CDCB685 /* GamePhaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePhaseView.swift; sourceTree = "<group>"; };
@@ -194,6 +235,8 @@
 		F37643DA9498795D37DBFEDF /* WordCard+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordCard+Identifiable.swift"; sourceTree = "<group>"; };
 		F4D67053F1F906C87AC00107 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
 		F5AC4DC27C97C59004E6F182 /* SoundToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundToggleButton.swift; sourceTree = "<group>"; };
+		F636246C09030D158E111488 /* HostLastChanceWaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostLastChanceWaitView.swift; sourceTree = "<group>"; };
+		F6EC1F822DFD74D8B2D56081 /* HostNameStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostNameStep.swift; sourceTree = "<group>"; };
 		FE4C3D0353CD9AC39EEDD191 /* AddWordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordField.swift; sourceTree = "<group>"; };
 		FF158155106E7BDF4445FC6A /* PassThePhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassThePhoneView.swift; sourceTree = "<group>"; };
 		FF325A3B9C01A5ECDEDFB69C /* HoldToRevealCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldToRevealCard.swift; sourceTree = "<group>"; };
@@ -205,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20570A35D7BF57C0270F274 /* ImposterKit in Frameworks */,
+				102BACD886920955D2BC5DCB /* ImposterHost in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +301,10 @@
 			children = (
 				441FB3C908C2649AEC556832 /* CustomPackStore.swift */,
 				B34453D10B7D0290E08EE20A /* GameStore.swift */,
+				127A0C1129C2C5C38216EB32 /* HostStore.swift */,
 				1B6E1B2AA1EA3EB25ED315DB /* RosterStore.swift */,
 				F0A635F8637CD891F083C306 /* RulesStore.swift */,
+				6B843A3ACA87AF3B5581385C /* WordHistory.swift */,
 				8C140AA48C46232801CE2C75 /* WordLibrary+Environment.swift */,
 			);
 			path = Model;
@@ -279,6 +325,32 @@
 				86EF8BCFC77244B27EFB085A /* WordEditorView.swift */,
 			);
 			path = Packs;
+			sourceTree = "<group>";
+		};
+		2D0D6F5D1F7226B2C081C1E3 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				39E5BB389368FE1BAC196C24 /* ConnectionDot.swift */,
+				7EEEBE1D8E6DD94E5C82ADF0 /* HostCluesView.swift */,
+				22A41FF40B134E2BEE90455A /* HostDealView.swift */,
+				364FD3BF505FADD42B7971CE /* HostGameView.swift */,
+				6B86EBDB13E1FDEE442A7A76 /* HostJoinInfo.swift */,
+				F636246C09030D158E111488 /* HostLastChanceWaitView.swift */,
+				02FBCE89F7BDA69F971E255F /* HostLobbyContent.swift */,
+				9E26C70D3AADF7722A0B5800 /* HostLobbyView.swift */,
+				F6EC1F822DFD74D8B2D56081 /* HostNameStep.swift */,
+				73E4A1A71859A3CCC425B3AE /* HostPhaseView.swift */,
+				5A1B1F9FDD136794FB8F33B3 /* HostPlayerRow.swift */,
+				AFCB1AECA02A4F695A7B4EC2 /* HostPlayersSheet.swift */,
+				485FDD2E342888440BE19F92 /* HostRulesView.swift */,
+				30166FECEACBC65FBDB1E877 /* HostStatusList.swift */,
+				66DC9791869C0E3E6E7CB24D /* HostVotingView.swift */,
+				298EEF7ED65E61272B01E51B /* JoinLinkSheet.swift */,
+				6733F6825CA79FE288DD707F /* PeekSheet.swift */,
+				8D536467C23524D4F3D4D961 /* PlayerView+Host.swift */,
+				32914BB09CF2490AC066A31B /* QRCodeView.swift */,
+			);
+			path = Host;
 			sourceTree = "<group>";
 		};
 		2FD56B88A19C6AD3BEAA4418 /* Clues */ = {
@@ -424,6 +496,7 @@
 			children = (
 				7A9C685E192D2029BD4B30F1 /* Game */,
 				113760357A638FE5F15E3D4E /* Home */,
+				2D0D6F5D1F7226B2C081C1E3 /* Host */,
 				217297A2D6E3DC1D86797B09 /* Packs */,
 				0817310E62E8DC2A75BEE712 /* Players */,
 				9A0557E024B7304A6FD61CC1 /* Rules */,
@@ -522,6 +595,7 @@
 			name = Imposter;
 			packageProductDependencies = (
 				B6F0A28755A3E969A5064F41 /* ImposterKit */,
+				BE421AB67BDA1E8C30646F9F /* ImposterHost */,
 			);
 			productName = Imposter;
 			productReference = BDDE29818A37A7B8D0093E4A /* Imposter.app */;
@@ -595,6 +669,7 @@
 				B6217704E539D26C0C42068F /* CardFan.swift in Sources */,
 				C941056F86B976B1F12A464B /* CardWord.swift in Sources */,
 				D41CF5078565F2E54FC69C38 /* CluesView.swift in Sources */,
+				0807620C795722D39DAE27C9 /* ConnectionDot.swift in Sources */,
 				31C03D6284BA1D87893A0B35 /* Countdown.swift in Sources */,
 				1910FAFB26E88E23E8354ECD /* CrewCard.swift in Sources */,
 				13D4FE537346ED3A5C139CFC /* CustomPackStore.swift in Sources */,
@@ -609,6 +684,21 @@
 				BA77ED1AF2C8FB4869CA1E60 /* GameView.swift in Sources */,
 				1EAA317259787FED50622C61 /* HoldToRevealCard.swift in Sources */,
 				870E4802384F011C2F4A39B9 /* HomeView.swift in Sources */,
+				6140764FEC24C9D75DA23541 /* HostCluesView.swift in Sources */,
+				BD61CF91B574143667891B4F /* HostDealView.swift in Sources */,
+				4437370E5097ABF16FB0AD0E /* HostGameView.swift in Sources */,
+				3EC7BBC5BA37EE473D2CE630 /* HostJoinInfo.swift in Sources */,
+				8ED21DDC16BCE5ACCD6F6A7A /* HostLastChanceWaitView.swift in Sources */,
+				8311A4750A8367052E88EBEF /* HostLobbyContent.swift in Sources */,
+				2FC448575EF42D316D4DBCAE /* HostLobbyView.swift in Sources */,
+				6B3CD53C5120128A763A0622 /* HostNameStep.swift in Sources */,
+				EAA05B3651A8309B8E8322F4 /* HostPhaseView.swift in Sources */,
+				991EE7972C5247C9A08EAC50 /* HostPlayerRow.swift in Sources */,
+				61EAAC859B954F3A42E5108E /* HostPlayersSheet.swift in Sources */,
+				FF8F5E36228813D3B0195312 /* HostRulesView.swift in Sources */,
+				DA4163386DAB68D9C63CA60F /* HostStatusList.swift in Sources */,
+				E9D019FF157D2C1A149FCD3F /* HostStore.swift in Sources */,
+				3EB3F6D443D1B66DE4A285A6 /* HostVotingView.swift in Sources */,
 				6A2268AFF536E4A332E78D63 /* HouseRules+Copy.swift in Sources */,
 				F7007D6F8662F2A36C84A464 /* HouseRulesSection.swift in Sources */,
 				2891FE1DF150B6CFB3D6008C /* HowToPlayView.swift in Sources */,
@@ -618,6 +708,7 @@
 				E5B38AFE100F728405EDC63B /* ImposterIntelSection.swift in Sources */,
 				FCEC5B386DC711D23D4F01DF /* ImpostersSection.swift in Sources */,
 				EC075461FC4B27E7131098B4 /* IntelOptionRow.swift in Sources */,
+				97217876704405C4A58A11A9 /* JoinLinkSheet.swift in Sources */,
 				1B18FDB73522B02BA96A280D /* LastChanceView.swift in Sources */,
 				FAEBDAC1C2626C61F18AAB11 /* Metrics.swift in Sources */,
 				0FBD7077A28C102D5DE673CC /* NavigationBarAppearance.swift in Sources */,
@@ -629,12 +720,15 @@
 				FADB867FB76FD79DA4684BB0 /* PacksView.swift in Sources */,
 				342E65B933AFD2ACB06A59BB /* PassThePhoneView.swift in Sources */,
 				7E0CB7B2B1F614230C0B2D70 /* PasteListView.swift in Sources */,
+				0EF99F30278A7511A9DE6BE0 /* PeekSheet.swift in Sources */,
 				1B8E4BF6B4394A80AC31BBAE /* PeekStep.swift in Sources */,
 				D24CF1BF551A6814153FD415 /* PillButtonStyle.swift in Sources */,
 				FC9399189E4125DA1E4E1961 /* PlayerRow.swift in Sources */,
+				E61CFC89B8A8E98A23B281AE /* PlayerView+Host.swift in Sources */,
 				7A471D84AC5CA60D831A7D3E /* PlayersContinueBar.swift in Sources */,
 				763E3F01C1D2C94A7ADC978B /* PlayersView.swift in Sources */,
 				6583692A1528DA9EA77F0C77 /* PlayingCard.swift in Sources */,
+				16CB2EF4DA2A2E69ED08E7D2 /* QRCodeView.swift in Sources */,
 				020DDC88A24931835B5A465A /* QuickAccuseView.swift in Sources */,
 				2CCC3A88A6ADA73ACDB4273E /* ResultSummary.swift in Sources */,
 				EF1F23CAC5547719740CD582 /* ResultsView.swift in Sources */,
@@ -667,6 +761,7 @@
 				8DCE9CE12F802F30340C2DF2 /* VotingView.swift in Sources */,
 				1F79F5A0436C4F85FBE6C56D /* WordCard+Identifiable.swift in Sources */,
 				CD4A3080C70D0C5251A20040 /* WordEditorView.swift in Sources */,
+				2EDF90688F7184C46A0B70B1 /* WordHistory.swift in Sources */,
 				64165830C9CAC7576A81D016 /* WordLibrary+Environment.swift in Sources */,
 				4116E84F87032AFA641FA436 /* WordsSection.swift in Sources */,
 			);
@@ -683,13 +778,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(IMPOSTER_BUNDLE_ID)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -772,13 +867,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(IMPOSTER_BUNDLE_ID)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -880,6 +975,10 @@
 		B6F0A28755A3E969A5064F41 /* ImposterKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ImposterKit;
+		};
+		BE421AB67BDA1E8C30646F9F /* ImposterHost */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ImposterHost;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

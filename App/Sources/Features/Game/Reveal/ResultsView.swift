@@ -7,6 +7,8 @@ struct ResultsView: View {
     var result: GameSession.RoundResult
     var nextRound: () -> Void
     var showScoreboard: () -> Void
+    /// Adds an "End game" button, such as in host mode, where the host closes the round for everyone.
+    var endGame: (() -> Void)?
 
     @State private var isRevealed = false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -42,6 +44,10 @@ struct ResultsView: View {
                     .buttonStyle(.pill)
                 Button("Scoreboard", action: showScoreboard)
                     .buttonStyle(.pillSecondary)
+                if let endGame {
+                    Button("End game", action: endGame)
+                        .buttonStyle(.pillSecondary)
+                }
             }
             .padding(.horizontal, Metrics.gutter)
             .padding(.top, 12)

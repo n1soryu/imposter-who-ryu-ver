@@ -6,7 +6,7 @@ import ImposterKit
 ///
 /// Pass `-scene <name>` as a launch argument, for example `xcrun simctl launch <device> com.n1soryu.imposter -scene results`.
 enum DebugScene: String, CaseIterable {
-    case players, rules, packs, packEditor, deal, clues, discussion, voting, lastChance, results, scoreboard
+    case players, rules, packs, packEditor, deal, clues, discussion, voting, lastChance, results, scoreboard, hostLobby
 
     static var requested: DebugScene? {
         UserDefaults.standard.string(forKey: "scene").flatMap(DebugScene.init(rawValue:))
@@ -14,7 +14,7 @@ enum DebugScene: String, CaseIterable {
 
     /// Sets up the stores and returns the navigation path for this scene.
     @MainActor
-    func prepare(roster: RosterStore, rules: RulesStore, game: GameStore, packs: CustomPackStore, library: WordLibrary) -> [Route] {
+    func prepare(roster: RosterStore, rules: RulesStore, game: GameStore, host: HostStore, packs: CustomPackStore, library: WordLibrary) -> [Route] {
         for name in ["Ryu", "Aiko", "Ben", "Chloe", "Dev"] where roster.players.contains(where: { $0.name == name }) == false {
             try? roster.add(name)
         }
@@ -23,6 +23,9 @@ enum DebugScene: String, CaseIterable {
 
         switch self {
         case .players: return [.players]
+        case .hostLobby:
+            try? host.begin(hostName: roster.players.first?.name ?? "Ryu", library: library)
+            return [.hostLobby]
         case .rules: return [.players, .rules]
         case .packs, .packEditor:
             let id = packs.packs.first { $0.name == "Our trips" }?.id ?? samplePack(in: packs)

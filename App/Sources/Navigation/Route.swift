@@ -7,4 +7,7 @@ enum Route: Hashable {
     case packs
     case pack(WordCategory.ID)
     case game
+    case hostLobby
+    case hostRules
+    case hostGame
 }

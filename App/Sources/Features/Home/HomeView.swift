@@ -3,6 +3,7 @@ import SwiftUI
 
 struct HomeView: View {
     var startNewGame: () -> Void
+    var hostGame: () -> Void
 
     @Environment(\.wordLibrary) private var library
     @State private var isShowingRules = false
@@ -38,10 +39,12 @@ struct HomeView: View {
             VStack(spacing: 12) {
                 Button("New game", action: startNewGame)
                     .buttonStyle(.pill)
+                Button("Host a game", action: hostGame)
+                    .buttonStyle(.pillSecondary)
                 Button("How to play", action: showRules)
                     .buttonStyle(.pillSecondary)
             }
-            .padding(.top, 28)
+            .padding(.top, 24)
         }
         .padding(Metrics.gutter)
         // Past this size the tagline and buttons alone are taller than the phone, so the home screen stops growing here.
@@ -60,7 +63,7 @@ struct HomeView: View {
 
 #Preview {
     NavigationStack {
-        HomeView {}
+        HomeView(startNewGame: {}, hostGame: {})
     }
     .environment(\.wordLibrary, .bundledOrEmpty())
     .environment(SoundPlayer(defaults: UserDefaults(suiteName: "preview-home") ?? .standard))
