@@ -22,6 +22,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Friends join your game from their phones over Wi-Fi.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>BricolageGrotesque-SemiBold.ttf</string>

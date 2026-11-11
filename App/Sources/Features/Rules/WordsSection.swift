@@ -6,7 +6,7 @@ struct WordsSection: View {
     @Binding var rules: HouseRules
     var library: WordLibrary
     var wordsInPlay: Int
-    var managePacks: () -> Void
+    var managePacks: (() -> Void)?
 
     private let columns = [GridItem(.adaptive(minimum: 140), spacing: 8)]
 
@@ -43,19 +43,21 @@ struct WordsSection: View {
             }
             .tint(Color.crewInk)
 
-            Button(action: managePacks) {
-                HStack {
-                    Label("Your word packs", systemImage: "rectangle.stack.badge.plus")
-                        .foregroundStyle(Color.cardStock)
-                    Spacer()
-                    Image(systemName: "chevron.right")
-                        .font(.footnote.weight(.semibold))
-                        .foregroundStyle(Color.haze)
-                        .accessibilityHidden(true)
+            if let managePacks {
+                Button(action: managePacks) {
+                    HStack {
+                        Label("Your word packs", systemImage: "rectangle.stack.badge.plus")
+                            .foregroundStyle(Color.cardStock)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.footnote.weight(.semibold))
+                            .foregroundStyle(Color.haze)
+                            .accessibilityHidden(true)
+                    }
+                    .contentShape(.rect)
                 }
-                .contentShape(.rect)
+                .buttonStyle(.plain)
             }
-            .buttonStyle(.plain)
         } header: {
             HStack {
                 SectionTitle("Words")

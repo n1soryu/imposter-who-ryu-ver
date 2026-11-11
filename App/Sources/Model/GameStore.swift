@@ -10,18 +10,17 @@ final class GameStore {
     /// Why the last attempt to start or continue a game failed.
     var problem: String?
 
-    @ObservationIgnored private let defaults: UserDefaults
-    private static let historyKey = "wordHistory.v1"
+    @ObservationIgnored private let history: WordHistory
 
     init(defaults: UserDefaults = .standard) {
-        self.defaults = defaults
+        history = WordHistory(defaults: defaults)
     }
 
     /// Deals the first round. Returns `false` and sets `problem` if the game can't start.
     @discardableResult
     func start(players: [Player], rules: HouseRules, library: WordLibrary) -> Bool {
         do {
-            session = try GameSession(players: players, rules: rules, library: library, picker: savedPicker())
+            session = try GameSession(players: players, rules: rules, library: library, picker: history.load())
             problem = nil
             saveHistory()
             return true
@@ -58,16 +57,8 @@ final class GameStore {
         problem = nil
     }
 
-    private func savedPicker() -> WordPicker {
-        guard let data = defaults.data(forKey: Self.historyKey),
-              let picker = try? JSONDecoder().decode(WordPicker.self, from: data)
-        else { return WordPicker() }
-        return picker
-    }
-
     private func saveHistory() {
-        guard let picker = session?.picker, let data = try? JSONEncoder().encode(picker) else { return }
-        defaults.set(data, forKey: Self.historyKey)
+        if let picker = session?.picker { history.save(picker) }
     }
 }
 

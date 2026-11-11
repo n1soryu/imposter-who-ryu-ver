@@ -3,6 +3,8 @@ import SwiftUI
 /// The caught imposter gets one guess at the secret word.
 struct LastChanceView: View {
     var imposterName: String
+    /// The phone's owner is the imposter, as in host mode, so the copy says "you".
+    var isYou = false
     var guess: (String?) -> Void
 
     @State private var text = ""
@@ -16,12 +18,14 @@ struct LastChanceView: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
                     .foregroundStyle(Color.imposterInk)
-                Text("\(imposterName) was the imposter. They get one last chance: guess the word to steal the win.")
+                Text(isYou
+                     ? "You were the imposter. You get one last chance: guess the word to steal the win."
+                     : "\(imposterName) was the imposter. They get one last chance: guess the word to steal the win.")
                     .font(.title3)
                     .foregroundStyle(Color.cardStock)
                     .padding(.top, 8)
     
-                TextField("Their guess", text: $text)
+                TextField(isYou ? "Your guess" : "Their guess", text: $text)
                     .font(.displaySemiBold(26, relativeTo: .title2))
                     .textInputAutocapitalization(.words)
                     .autocorrectionDisabled()
@@ -44,7 +48,7 @@ struct LastChanceView: View {
                 Button("Lock in the guess", action: submit)
                     .buttonStyle(.pill)
                     .disabled(trimmed.isEmpty)
-                Button("\(imposterName) gives up", action: giveUp)
+                Button(isYou ? "I give up" : "\(imposterName) gives up", action: giveUp)
                     .buttonStyle(.pillSecondary)
             }
             .padding(Metrics.gutter)
