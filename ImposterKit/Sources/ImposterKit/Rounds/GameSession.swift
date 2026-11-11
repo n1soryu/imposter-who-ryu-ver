@@ -81,6 +81,12 @@ public struct GameSession: Hashable, Sendable {
         phase = next < round.players.count ? .dealing(seat: next) : .clues(lap: 1, turn: 0)
     }
 
+    /// Skips the pass-the-phone deal and starts clues. Host mode tracks who has seen their card itself.
+    public mutating func finishDeal() {
+        guard case .dealing = phase else { return }
+        phase = .clues(lap: 1, turn: 0)
+    }
+
     // MARK: Clues
 
     /// Whose turn it is to give a clue.
@@ -126,6 +132,18 @@ public struct GameSession: Hashable, Sendable {
     /// Records the next voter's pick. Ignored if it isn't that player's turn or they pick themselves.
     public mutating func castVote(by voter: Player.ID, for suspect: Player.ID) {
         guard case .voting(var tally) = phase, nextVoter?.id == voter else { return }
+        tally.cast(by: voter, for: suspect)
+        phase = .voting(tally)
+    }
+
+    /// Records a secret ballot in any order. Ignored unless voting is open, both players are in the round, they differ, and the voter hasn't voted yet.
+    public mutating func castBallot(by voter: Player.ID, for suspect: Player.ID) {
+        guard case .voting(var tally) = phase,
+              voter != suspect,
+              round.player(voter) != nil,
+              round.player(suspect) != nil,
+              tally.hasVoted(voter) == false
+        else { return }
         tally.cast(by: voter, for: suspect)
         phase = .voting(tally)
     }
@@ -182,6 +200,24 @@ public struct GameSession: Hashable, Sendable {
     public mutating func nextRound(library: WordLibrary) throws(GameError) {
         var generator = SystemRandomNumberGenerator()
         try nextRound(library: library, using: &generator)
+    }
+
+    /// Deals the next round to a changed group, such as after kicks or late joiners. Keeps the scores and word history, and fits the rules to the new player count.
+    public mutating func nextRound(players: [Player], library: WordLibrary, using generator: inout some RandomNumberGenerator) throws(GameError) {
+        guard case .finished = phase else { return }
+        let rules = rules.fitted(toPlayers: players.count)
+        let (round, symbol) = try Self.deal(players: players, rules: rules, library: library, picker: &picker, using: &generator)
+        self.players = players
+        self.rules = rules
+        self.round = round
+        self.categorySymbol = symbol
+        phase = .dealing(seat: 0)
+        roundNumber += 1
+    }
+
+    public mutating func nextRound(players: [Player], library: WordLibrary) throws(GameError) {
+        var generator = SystemRandomNumberGenerator()
+        try nextRound(players: players, library: library, using: &generator)
     }
 
     private static func deal(
