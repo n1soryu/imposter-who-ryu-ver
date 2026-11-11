@@ -7,6 +7,23 @@ All notable changes to this project are recorded here. The format follows
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-11
+
+### Added
+
+- **Host mode.** Tap Host a game and friends join from any phone's browser by scanning a QR
+  code over Wi-Fi or your Personal Hotspot. Everyone gets their card, gives clues and votes on
+  their own phone, and a phone that drops rejoins the same seat. Secret ballots and the quick
+  group vote both work.
+- **Peek at your card** up to 3 times a round in host mode, for when you forget the word.
+- `NSLocalNetworkUsageDescription`: iOS asks for Local Network access the first time you host.
+- `imposter-host-dev`, a Mac dev server for playing host mode from browser tabs
+  (`cd ImposterKit && swift run imposter-host-dev`, then open the printed URL with `?dev=1`).
+
+### Changed
+
+- The app version is now 0.3.0 (build 3).
+
 ## [0.2.0] - 2026-11-10
 
 ### Added
@@ -75,6 +92,7 @@ and 1).
 
 - Reveal screen layout, long words wrapping on cards, and the keyboard covering text fields.
 
-[Unreleased]: https://github.com/n1soryu/imposter-who-ryu-ver/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/n1soryu/imposter-who-ryu-ver/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/n1soryu/imposter-who-ryu-ver/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/n1soryu/imposter-who-ryu-ver/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/n1soryu/imposter-who-ryu-ver/releases/tag/v0.1.0
