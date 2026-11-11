@@ -13,7 +13,7 @@
   <img alt="iOS 17+" src="https://img.shields.io/badge/iOS-17%2B-1E1A3C">
   <img alt="Swift 6" src="https://img.shields.io/badge/Swift-6-FF3D7F">
   <img alt="SwiftUI" src="https://img.shields.io/badge/UI-SwiftUI-FFD23F">
-  <img alt="Version 0.2.0" src="https://img.shields.io/badge/version-0.2.0-8F8BB8">
+  <img alt="Version 0.3.0" src="https://img.shields.io/badge/version-0.3.0-8F8BB8">
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-F3F4FF"></a>
 </p>
 
@@ -109,10 +109,12 @@ scripts/build.sh simulator
   makes a good word.
 - Note notable changes under **Unreleased** in [CHANGELOG.md](CHANGELOG.md).
 
-## What's next
+## Host mode
 
-Host mode: the iPhone runs the game and friends join from any phone's browser (iPhone or
-Android) by scanning a QR code over local Wi-Fi. See the [roadmap](docs/ROADMAP.md).
+Tap **Host a game** and friends join from any phone's browser (iPhone or Android) by scanning
+a QR code, over your Wi-Fi or Personal Hotspot. No internet needed. Everyone gets their card,
+gives clues and votes on their own phone, can peek at their card up to 3 times a round, and a
+phone that drops rejoins the same seat. How it works: [docs/HOST_MODE.md](docs/HOST_MODE.md).
 
 ## License and credits
 

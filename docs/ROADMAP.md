@@ -35,15 +35,16 @@ Needs Xcode (free, Mac App Store).
 ## Phase 2 — Host mode (same-room multiplayer, any phone)
 
 The iPhone hosts the game, and friends join by scanning a QR code with any phone browser (iOS or
-Android), over local Wi-Fi or the host's hotspot. No internet needed.
+Android), over local Wi-Fi or the host's hotspot. No internet needed. The contract is in [HOST_MODE.md](HOST_MODE.md).
 
 | # | Feature | Status |
 |---|---|---|
-| 2.1 | Message protocol and host-side game session in `ImposterKit` | ⬜ |
-| 2.2 | Embedded HTTP and WebSocket server (Network framework) | ⬜ |
-| 2.3 | Browser client (bundled HTML/CSS/JS) | ⬜ |
-| 2.4 | Lobby: QR join, player list, kick, reconnect | ⬜ |
-| 2.5 | Private cards, clue turns and voting on each player's own phone | ⬜ |
+| 2.1 | Message protocol and host-side game session in `ImposterKit` | ✅ |
+| 2.2 | Embedded HTTP and WebSocket server (Network framework) | ✅ |
+| 2.3 | Browser client (bundled HTML/CSS/JS) | ✅ |
+| 2.4 | Lobby: QR join, player list, kick, reconnect | 🚧 |
+| 2.5 | Private cards, clue turns and voting on each player's own phone | 🚧 |
+| 2.6 | Peek at your card again, up to 3 times a round | 🚧 |
 
 ## Phase 3 — Nice to have
 
