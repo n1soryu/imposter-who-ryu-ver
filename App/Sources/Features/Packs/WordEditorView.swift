@@ -18,19 +18,19 @@ struct WordEditorView: View {
         NavigationStack {
             Form {
                 Section {
-                    TextField("Word", text: $word)
+                    TextField("Word", text: $word, prompt: Text("Word").foregroundStyle(Color.haze))
                         .font(.displaySemiBold(22, relativeTo: .title3))
                         .textInputAutocapitalization(.words)
                 } header: {
                     SectionTitle("Secret word")
                 } footer: {
                     if let problem {
-                        Text(problem).foregroundStyle(Color.imposterInk)
+                        Text(problem).foregroundStyle(Color.imposterGlow)
                     }
                 }
 
                 Section {
-                    TextField("Oven, slice, delivery", text: $hints, axis: .vertical)
+                    TextField("Oven, slice, delivery", text: $hints, prompt: Text("Oven, slice, delivery").foregroundStyle(Color.haze), axis: .vertical)
                         .textInputAutocapitalization(.words)
                 } header: {
                     SectionTitle("Hints")
@@ -39,7 +39,7 @@ struct WordEditorView: View {
                 }
 
                 Section {
-                    TextField("Calzone, flatbread", text: $decoys, axis: .vertical)
+                    TextField("Calzone, flatbread", text: $decoys, prompt: Text("Calzone, flatbread").foregroundStyle(Color.haze), axis: .vertical)
                         .textInputAutocapitalization(.words)
                 } header: {
                     SectionTitle("Similar words")

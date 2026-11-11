@@ -18,7 +18,7 @@ struct HostJoinInfo: View {
                 }
             case .failed(let message):
                 Text(message)
-                    .foregroundStyle(Color.imposterInk)
+                    .foregroundStyle(Color.imposterGlow)
                 Button("Try again", action: retry)
                     .buttonStyle(.pillSecondary)
             case .stopped:
@@ -58,7 +58,7 @@ struct HostJoinInfo: View {
             }
         } else {
             Text("This iPhone isn't on Wi-Fi yet. Join the same Wi-Fi as your friends, or turn on Personal Hotspot and have them join it.")
-                .foregroundStyle(Color.imposterInk)
+                .foregroundStyle(Color.imposterGlow)
             Button("Check again", action: refresh)
                 .buttonStyle(.pillSecondary)
         }

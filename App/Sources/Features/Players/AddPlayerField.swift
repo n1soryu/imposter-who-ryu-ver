@@ -13,7 +13,7 @@ struct AddPlayerField: View {
                 .foregroundStyle(Color.crewInk)
                 .frame(minWidth: 22, alignment: .trailing)
                 .accessibilityHidden(true)
-            TextField(isFull ? "The table is full" : "Add a player", text: $name)
+            TextField(isFull ? "The table is full" : "Add a player", text: $name, prompt: Text(isFull ? "The table is full" : "Add a player").foregroundStyle(Color.haze))
                 .textInputAutocapitalization(.words)
                 .autocorrectionDisabled()
                 .submitLabel(.next)

@@ -24,12 +24,13 @@ Colours live in `App/Resources/Assets.xcassets` and are used through generated s
 
 | Name | Hex | Role |
 |---|---|---|
-| `felt` | `#1E1A3C` | Background: the table |
-| `feltRaised` | `#2B2652` | Secondary buttons, rows |
-| `cardStock` | `#F3F4FF` | Primary text on felt |
-| `crewInk` | `#FFD23F` | Crew cards, primary actions |
-| `imposterInk` | `#FF3D7F` | Imposter cards, danger |
-| `haze` | `#8F8BB8` | Secondary text |
+| `felt` | `#0A0908` | Background: the table |
+| `feltRaised` | `#2C251E` | Secondary buttons, rows (the brown `#5E503F` at 40% over felt, so text on it stays readable) |
+| `cardStock` | `#F2F4F3` | Primary text on felt |
+| `crewInk` | `#A9927D` | Crew cards, primary actions |
+| `imposterInk` | `#49111C` | Imposter cards, danger |
+| `imposterGlow` | `#DB6A7D` | Imposter/warning text on felt |
+| `haze` | `#BDB3A8` | Secondary text |
 
 ## Type
 

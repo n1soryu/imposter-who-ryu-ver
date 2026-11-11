@@ -14,7 +14,7 @@ struct DealBar: View {
             if let problem {
                 Text(problem)
                     .font(.footnote)
-                    .foregroundStyle(Color.imposterInk)
+                    .foregroundStyle(Color.imposterGlow)
             }
         }
         .padding(.horizontal, Metrics.gutter)

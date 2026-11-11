@@ -9,7 +9,7 @@ struct PackWordsFooter: View {
         VStack(alignment: .leading, spacing: 6) {
             if let problem {
                 Text(problem)
-                    .foregroundStyle(Color.imposterInk)
+                    .foregroundStyle(Color.imposterGlow)
             }
             if wordCount < 10 {
                 Text("Packs with fewer than 10 words start repeating quickly.")

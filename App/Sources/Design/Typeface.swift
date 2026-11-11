@@ -1,6 +1,6 @@
 import SwiftUI
 
-// Palette colours (.felt, .feltRaised, .cardStock, .crewInk, .imposterInk, .haze) come from
+// Palette colours (.felt, .feltRaised, .cardStock, .crewInk, .imposterInk, .imposterGlow, .haze) come from
 // Assets.xcassets through Xcode's generated asset symbols. See docs/DESIGN.md.
 
 /// PostScript names of the bundled Bricolage Grotesque cuts.

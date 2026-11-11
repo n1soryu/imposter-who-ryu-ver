@@ -17,7 +17,7 @@ struct LastChanceView: View {
                     .font(.display(64))
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
-                    .foregroundStyle(Color.imposterInk)
+                    .foregroundStyle(Color.imposterGlow)
                 Text(isYou
                      ? "You were the imposter. You get one last chance: guess the word to steal the win."
                      : "\(imposterName) was the imposter. They get one last chance: guess the word to steal the win.")
@@ -25,7 +25,7 @@ struct LastChanceView: View {
                     .foregroundStyle(Color.cardStock)
                     .padding(.top, 8)
     
-                TextField(isYou ? "Your guess" : "Their guess", text: $text)
+                TextField(isYou ? "Your guess" : "Their guess", text: $text, prompt: Text(isYou ? "Your guess" : "Their guess").foregroundStyle(Color.haze))
                     .font(.displaySemiBold(26, relativeTo: .title2))
                     .textInputAutocapitalization(.words)
                     .autocorrectionDisabled()

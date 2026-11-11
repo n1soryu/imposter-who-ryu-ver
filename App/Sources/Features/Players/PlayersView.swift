@@ -39,7 +39,7 @@ struct PlayersView: View {
                     .padding(.bottom, 8)
             } footer: {
                 Text(problem ?? "")
-                    .foregroundStyle(Color.imposterInk)
+                    .foregroundStyle(Color.imposterGlow)
             }
         }
         .scrollContentBackground(.hidden)

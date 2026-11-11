@@ -6,6 +6,8 @@ struct PlayingCard<Content: View>: View {
     var misprint: Color
     /// The small mark printed in two corners, like a playing card's index.
     var cornerMark: String
+    /// The ink of the corner marks. Dark on light faces, light on dark ones.
+    var ink: Color = .felt
     @ViewBuilder var content: Content
 
     var body: some View {
@@ -38,6 +40,7 @@ struct PlayingCard<Content: View>: View {
             }
         }
         .font(.title3)
+        .foregroundStyle(ink)
         .padding(16)
         .accessibilityHidden(true)
     }

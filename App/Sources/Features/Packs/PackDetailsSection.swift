@@ -20,7 +20,7 @@ struct PackDetailsSection: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 56)
                     .accessibilityLabel("Pack emoji")
-                TextField("Pack name", text: $nameText)
+                TextField("Pack name", text: $nameText, prompt: Text("Pack name").foregroundStyle(Color.haze))
                     .font(.displaySemiBold(24, relativeTo: .title2))
                     .foregroundStyle(Color.cardStock)
                     .textInputAutocapitalization(.words)

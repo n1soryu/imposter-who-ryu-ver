@@ -14,7 +14,7 @@ struct PasteListView: View {
         NavigationStack {
             Form {
                 Section {
-                    TextField("Paris\nRome\nLisbon", text: $text, axis: .vertical)
+                    TextField("Paris\nRome\nLisbon", text: $text, prompt: Text("Paris\nRome\nLisbon").foregroundStyle(Color.haze), axis: .vertical)
                         .lineLimit(8...)
                         .focused($isFocused)
                 } footer: {

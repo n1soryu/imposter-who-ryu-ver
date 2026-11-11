@@ -22,9 +22,10 @@ extension Color {
         )
     }
 
-    static let felt = Color(hex: 0x1E1A3C)
-    static let crewInk = Color(hex: 0xFFD23F)
-    static let imposterInk = Color(hex: 0xFF3D7F)
+    static let felt = Color(hex: 0x0A0908)
+    static let crewInk = Color(hex: 0xA9927D)
+    static let cardStock = Color(hex: 0xF2F4F3)
+    static let imposterInk = Color(hex: 0x49111C)
 }
 
 /// A card with an off-register second ink behind it, like the app's PlayingCard.
@@ -56,7 +57,7 @@ struct AppIcon: View {
             IconCard(face: .imposterInk, misprint: .crewInk) {
                 Text("?")
                     .font(.custom("BricolageGrotesque96ptExtraBold-ExtraBold", size: 420))
-                    .foregroundStyle(Color.felt)
+                    .foregroundStyle(Color.cardStock)
                     .offset(y: -10)
             }
             .rotationEffect(.degrees(9))

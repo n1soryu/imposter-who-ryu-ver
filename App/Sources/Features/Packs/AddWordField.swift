@@ -11,7 +11,7 @@ struct AddWordField: View {
             Image(systemName: "plus")
                 .foregroundStyle(Color.crewInk)
                 .accessibilityHidden(true)
-            TextField("Add a word", text: $word)
+            TextField("Add a word", text: $word, prompt: Text("Add a word").foregroundStyle(Color.haze))
                 .textInputAutocapitalization(.words)
                 .autocorrectionDisabled()
                 .submitLabel(.next)

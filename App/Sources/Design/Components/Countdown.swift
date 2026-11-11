@@ -16,11 +16,11 @@ struct Countdown: View {
                 Text(isExpired ? "Time's up" : Duration.seconds(remaining).formatted(.time(pattern: .minuteSecond)))
                     .font(.displaySemiBold(22, relativeTo: .title3))
                     .monospacedDigit()
-                    .foregroundStyle(isExpired ? Color.imposterInk : Color.cardStock)
+                    .foregroundStyle(isExpired ? Color.imposterGlow : Color.cardStock)
                     .contentTransition(.numericText(countsDown: true))
 
                 Rectangle()
-                    .fill(isExpired ? Color.imposterInk : Color.crewInk)
+                    .fill(isExpired ? Color.imposterGlow : Color.crewInk)
                     .scaleEffect(x: fraction(remaining), anchor: .leading)
                     .frame(height: 8)
                     .background(Color.feltRaised)

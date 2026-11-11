@@ -10,9 +10,9 @@
 </p>
 
 <p align="center">
-  <img alt="iOS 17+" src="https://img.shields.io/badge/iOS-17%2B-1E1A3C">
-  <img alt="Swift 6" src="https://img.shields.io/badge/Swift-6-FF3D7F">
-  <img alt="SwiftUI" src="https://img.shields.io/badge/UI-SwiftUI-FFD23F">
+  <img alt="iOS 17+" src="https://img.shields.io/badge/iOS-17%2B-0A0908">
+  <img alt="Swift 6" src="https://img.shields.io/badge/Swift-6-49111C">
+  <img alt="SwiftUI" src="https://img.shields.io/badge/UI-SwiftUI-A9927D">
   <img alt="Version 0.3.0" src="https://img.shields.io/badge/version-0.3.0-8F8BB8">
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-F3F4FF"></a>
 </p>

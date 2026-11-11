@@ -21,7 +21,7 @@ struct ResultsView: View {
             VStack(alignment: .leading, spacing: 0) {
                 Text(summary.headline)
                     .font(.display(48))
-                    .foregroundStyle(summary.isCrewWin ? Color.crewInk : Color.imposterInk)
+                    .foregroundStyle(summary.isCrewWin ? Color.crewInk : Color.imposterGlow)
                     .minimumScaleFactor(0.5)
                 Text(summary.detail)
                     .font(.title3)

@@ -22,7 +22,7 @@ struct HostNameStep: View {
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Color.haze)
                     .padding(.top, 28)
-                TextField("Your name", text: $name)
+                TextField("Your name", text: $name, prompt: Text("Your name").foregroundStyle(Color.haze))
                     .font(.displaySemiBold(26, relativeTo: .title2))
                     .textInputAutocapitalization(.words)
                     .autocorrectionDisabled()
@@ -37,7 +37,7 @@ struct HostNameStep: View {
                 if let problem {
                     Text(problem)
                         .font(.footnote)
-                        .foregroundStyle(Color.imposterInk)
+                        .foregroundStyle(Color.imposterGlow)
                         .padding(.top, 8)
                 }
             }

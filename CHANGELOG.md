@@ -7,6 +7,10 @@ All notable changes to this project are recorded here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- New colour palette (near-black, taupe, wine, warm brown, off-white).
+
 ## [0.3.0] - 2026-11-11
 
 ### Added

@@ -9,7 +9,7 @@ struct HostLastChanceWaitView: View {
             Spacer()
             Text("Caught!")
                 .font(.display(64))
-                .foregroundStyle(Color.imposterInk)
+                .foregroundStyle(Color.imposterGlow)
             Text("\(accusedName) was the imposter. They're making one last guess at the word.")
                 .font(.title3)
                 .foregroundStyle(Color.cardStock)

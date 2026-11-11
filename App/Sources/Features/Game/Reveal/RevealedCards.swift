@@ -21,7 +21,7 @@ struct RevealedCards: View {
                 .frame(width: Self.cardWidth)
                 .rotationEffect(.degrees(isRevealed ? -6 : 0))
                 .offset(x: isRevealed ? -Self.spread : 0)
-            PlayingCard(face: .imposterInk, misprint: .crewInk, cornerMark: "?") {
+            PlayingCard(face: .imposterInk, misprint: .crewInk, cornerMark: "?", ink: .cardStock) {
                 VStack(spacing: 8) {
                     Text(imposterNames.count == 1 ? "Imposter" : "Imposters")
                         .font(.subheadline.weight(.semibold))
@@ -30,7 +30,7 @@ struct RevealedCards: View {
                         .multilineTextAlignment(.center)
                         .minimumScaleFactor(0.4)
                 }
-                .foregroundStyle(Color.felt)
+                .foregroundStyle(Color.cardStock)
             }
             .frame(width: Self.cardWidth)
             .rotationEffect(.degrees(isRevealed ? 7 : 0))
